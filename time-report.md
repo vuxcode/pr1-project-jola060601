@@ -13,4 +13,4 @@ For example:
 - 2026-03-23 14:00 Worked for 1.5 hour.
   - My project plans for both PR1 and WE1 were both approved, so I can start working in the GitHub repository. I also downloaded the GitHub files to my OneDrive map.
   - Created a basic structure for webpage design on "index.html".
-    - Added skeleton structure for "Home", "About", and "Contact" sections of the webpage.
+    - Added skeleton structure for "Home", "About", "Games", and "Contact" sections of the webpage.
