@@ -14,3 +14,7 @@ For example:
   - My project plans for both PR1 and WE1 were both approved, so I can start working in the GitHub repository. I also downloaded the GitHub files to my OneDrive map.
   - Created a basic structure for webpage design on "index.html".
     - Added skeleton structure for "Home", "About", "Games", and "Contact" sections of the webpage.
+
+- 2026-03-24 11:45 Worked for 1.5 hour.
+  - Split the webpage so that "About", "Games", and "Contact" are their own separate files, while "Home" is the "index.html" file that is required for the project.
+    - This wasn't made clear yesterday.
