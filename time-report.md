@@ -6,6 +6,10 @@
   - Made a new html-file listing all countries for the games (even if some may be excluded in the future depending on game) from the existing "codes.json" file.
   - My project plans for both PR1 and WE1 were both approved, so I can start working in the GitHub repository. I also downloaded the GitHub files to my OneDrive map.
 
+- 2026-03-24 11:45 Worked for 1.5 hour.
+  - Edited the "countries.html" file by removing all non-sovereign states (except Taiwan and Kosovo).
+  - I also removed all non-sovereign state flags in the "flags" folder (except Taiwan and Kosovo).
+
 > WE1
 
 For example: 
