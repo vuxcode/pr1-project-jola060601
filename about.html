@@ -10,22 +10,46 @@
       padding: 0;
     }
     body {
-      background: #87ceeb;
+      background: #009DC4;
     }
     h1, div {
       margin: 10px;
     }
+    .menu ul {
+      background: #228B22;
+      list-style-type: none;
+      margin: 0;
+      overflow: hidden;
+      padding: 0;
+    }
+    .menu li {
+      display: inline-block;
+    }
+    .menu a {
+      display: block;
+      color: white;
+      padding: 16px;
+      text-align: center;
+      text-decoration: none;
+    }
+    .menu a:hover {
+      background-color: blue;
+    }
   </style>
 </head>
 <body>
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
   <h1>Geography Games</h1>
   <div>
     <h2>About</h2>
     <p>This webpage will contain simple games that I have coded for the enjoyment of everyone (mostly young children).</p>
     <p>The games are themed on geography, i.e. country names, flags, and capitals.</p>
-    <a href="index.html">Home</a>
-    <a href="games.html">Games</a>
-    <a href="contact.html">Contact</a>
   </div>
 </body>
 </html>
