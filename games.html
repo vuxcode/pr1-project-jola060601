@@ -15,19 +15,45 @@
     h1, div {
       margin: 10px;
     }
+    .menu ul {
+      background: #228B22;
+      list-style-type: none;
+      margin: 0;
+      overflow: hidden;
+      padding: 0;
+    }
+    .menu li {
+      display: inline-block;
+    }
+    .menu a {
+      display: block;
+      color: white;
+      padding: 16px;
+      text-align: center;
+      text-decoration: none;
+    }
+    .menu a:hover {
+      background-color: blue;
+    }
   </style>
 </head>
 <body>
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
   <h1>Geography Games</h1>
   <div>
     <h2>Games</h2>
     <p>Here's the list of currently available games:</p>
-    <p>Hangman</p>
-    <p>Flag</p>
-    <p>Capital city</p>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <ul>
+      <li><p>Hangman</p></li>
+      <li><p>Flag</p></li>
+      <li><p>Capital city</p></li>
+    </ul>
   </div>
 </body>
 </html>
