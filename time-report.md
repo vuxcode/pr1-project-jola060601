@@ -22,3 +22,6 @@ For example:
 - 2026-03-24 11:45 Worked for 1.5 hour.
   - Split the webpage so that "About", "Games", and "Contact" are their own separate files, while "Home" is the "index.html" file that is required for the project.
     - This wasn't made clear yesterday.
+
+- 2026-03-30 15:30 Worked for 1 hour.
+  - Redesigned all my webpages (i.e. "Home", "About", "Games", and "Contact"), mostly by adding a menubar at the top of the pages.
