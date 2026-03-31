@@ -10,6 +10,10 @@
   - Edited the "countries.html" file by removing all non-sovereign states (except Taiwan and Kosovo).
   - I also removed all non-sovereign state flags in the "flags" folder (except Taiwan and Kosovo).
 
+- 2026-03-31 14:50 Worked for 3 hours.
+  - Edited the "countries.html" file to resemble an actual HTML-file.
+    - I also added some code to count each letter usage for each country.
+
 > WE1
 
 For example: 
@@ -25,3 +29,6 @@ For example:
 
 - 2026-03-30 15:30 Worked for 1 hour.
   - Redesigned all my webpages (i.e. "Home", "About", "Games", and "Contact"), mostly by adding a menubar at the top of the pages.
+
+- 2026-03-31 14:50 Worked for 3 hours.
+  - Created the beginnings of the "Hangman Game" page.
