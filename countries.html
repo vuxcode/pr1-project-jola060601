@@ -202,4 +202,21 @@ var countryList = [
   ["zm", "Zambia"],
   ["zw", "Zimbabwe"]
 ]
+// I want to see what letters are being used (converted in uppercase) in the country names, and I want to count how many times they are being used
+// First, create a variable with an empty array to store the results
+var charCounts = [];
+// Then use a for-loop to look at each country name (the second item in the countryList array)
+for (var index = 0; index < countryList.length; index++) {
+  // Store the country names in a new variable in uppercase letters
+  var name = countryList[index][1].toUpperCase();
+  // Create a second for-loop to look at every character in the name variable
+  for (var char of name) {
+    // I want to skip the spaces
+    if (char === " ") continue;
+    // Update the count by 1 for every time a character appears in a country name
+    charCounts[char] = (charCounts[char] || 0) + 1;
+  }
+}
+// Output the updated array in the console
+console.log(charCounts);
 </script>
