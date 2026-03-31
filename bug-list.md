@@ -3,3 +3,4 @@
 > Make a list of the things that don't work as expected. Keep a list of things that you have fixed and try to document how you solved them.
 
 1. Problem (Date: 2026-03-30): When I redesigned the webpages (mostly by changing background color and making a menubar at the top) the menu didn't work. Originally I gave the ul element the menu class, but then I put the ul element inside a nav element and gave it the menu class instead, which fixed my problem and gave me a workable menu.
+2. Problem (Date: 2026-03-31): When I designed my hangman game, I noticed a problem where the letter ended up being surrounded by a border (each letter being inside an "li" element, all nested inside an "ul" element, both having their own classes). After several edits (and a little bit of help using Google AI), I ended up moving most information to one class, while the second one only needed (for now) the information to make the bottom border transparent after a letter is pressed.
