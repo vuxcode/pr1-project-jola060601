@@ -35,19 +35,21 @@
     .menu a:hover {
       background-color: blue;
     }
-    .currentword ul {
+    .currentword {
+      display: flex; /* Add the lines between each other (put it here instead of ".currentword li") */
+      gap: 10px; /* Create a gap between the lines (alternative to "padding: 0 10px;"") */
       list-style-type: none;
+      margin-bottom: 20px;
       overflow: hidden;
     }
     .currentword li {
       border-bottom: black solid 2px;
-      display: flex;
-      margin-bottom: 10px;
-      padding: 0 10px;
+      height: 40px;
       text-transform: uppercase;
       text-align: center;
+      width: 30px; /* This will prevent the lines from covering the entire page */
     }
-    .currentletter {
+    li.currentletter {
       border-bottom-color: transparent;
     }
   </style>
