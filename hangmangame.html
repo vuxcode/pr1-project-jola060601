@@ -35,6 +35,15 @@
     .menu a:hover {
       background-color: blue;
     }
+    #currentword ul {
+      list-style-type: none;
+      overflow: hidden;
+    }
+    #currentword li {
+      border: black solid 2px;
+      display: inline-block;
+      padding: 0 10px;
+    }
   </style>
 </head>
 <body>
@@ -53,7 +62,7 @@
       <h2>Guesses: 0 / 6</h2>
     </div>
     <div>
-      <ul>
+      <ul id="currentword">
         <li></li>
         <li></li>
         <li></li>
