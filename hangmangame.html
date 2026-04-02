@@ -15,6 +15,15 @@
     div {
       margin: 10px;
     }
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+    .box {
+      height: 200px;
+      width: 200px;
+      background: white;
+    }
     .menu ul {
       background: #228B22;
       list-style-type: none;
@@ -64,13 +73,13 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <main>
-    <div>
+  <main class="container">
+    <div class="box">
       <img src="hangman/hangman-0.svg">
       <h1>Hangman Game</h1>
       <h2>Guesses: 0 / 6</h2>
     </div>
-    <div>
+    <div class="box">
       <ul class="currentword">
         <li class="currentletter">a</li>
         <li>n</li>
