@@ -16,8 +16,6 @@
 
 > WE1
 
-For example: 
-
 - 2026-03-23 14:00 Worked for 1.5 hour.
   - My project plans for both PR1 and WE1 were both approved, so I can start working in the GitHub repository. I also downloaded the GitHub files to my OneDrive map.
   - Created a basic structure for webpage design on "index.html".
@@ -32,3 +30,6 @@ For example:
 
 - 2026-03-31 14:50 Worked for 3 hours.
   - Created the beginnings of the "Hangman Game" page.
+
+- 2026-04-02 14:30 Worked for 2.5 hours.
+  - Worked on the design for the "Hangman Game" page.
