@@ -108,7 +108,7 @@
     <div id="stuckwidth">
       <img src="hangman/hangman-0.svg">
       <h1>Hangman Game</h1>
-      <h2>Guesses: 0 / 6</h2>
+      <h2>Guesses: ${wrongGuesses} / ${maxGuesses}</h2>
     </div>
     <div id="widenbox">
       <ul class="currentword">
@@ -181,6 +181,9 @@
     </div>
   </main>
   <script>
+    // Create variables for guesses
+    var wrongGuesses = 0;
+    var maxGuesses = 6;
     // Create an array containing all characters for the keyboard
     var keyboardAlphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "Ã", "É", "Í", "Ô", "'", "-"];
     // Get the keyboard ID to append all buttons on the correct div
