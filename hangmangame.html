@@ -71,13 +71,13 @@
     li.currentletter {
       border-bottom-color: transparent;
     }
-    .keyboard {
+    #keyboard {
       display: flex;
       justify-content: center;
       padding: 15px;
       gap: 15px;
     }
-    .keyboard button {
+    #keyboard button {
       background: #009DC4;
       color: white;
       cursor: pointer;
@@ -174,19 +174,26 @@
         <li class="currentletter">e</li>
         <li class="currentletter">s</li> -->
       </ul>
-      <div class="keyboard">
-        <button>A</button><button>B</button><button>C</button><button>D</button><button>E</button><button>F</button><button>G</button><button>H</button>
-      </div>
-      <div class="keyboard">
-        <button>I</button><button>J</button><button>K</button><button>L</button><button>M</button><button>N</button><button>O</button><button>P</button>
-      </div>
-      <div class="keyboard">
-        <button>Q</button><button>R</button><button>S</button><button>T</button><button>U</button><button>V</button><button>W</button><button>X</button>
-      </div>
-      <div class="keyboard">
-        <button>Y</button><button>Z</button><button>Ã</button><button>É</button><button>Í</button><button>Ô</button><button>'</button><button>-</button>
-      </div>
+      <div id="keyboard"></div>
     </div>
   </main>
+  <script src="countries.html">
+    // Create an array containing all characters for the keyboard
+    var keyboardAlphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "Ã", "É", "Í", "Ô", "'", "-"];
+    // Get the keyboard ID to append all buttons on the correct div
+    var keyboardHangman = document.getElementById("keyboard");
+    // Loop through the alphabet array and create buttons for each index
+    for (var i = 0; i < keyboardAlphabet.length; i++) {
+      // Create a button element
+      var keyboardButton = document.createElement("button");
+      // Set the button text to corresponding character in the array
+      keyboardButton.innerText = keyboardAlphabet[i];
+      // Attach the "click" event to the button
+      keyboardButton.addEventListener("click", () => {
+        // When the button is clicked, an alert shows up with the clicked letter
+        alert(keyboardAlphabet[i])
+      });
+    }
+  </script>
 </body>
 </html>
