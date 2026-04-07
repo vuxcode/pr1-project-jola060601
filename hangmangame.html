@@ -186,7 +186,8 @@
     // Get the keyboard ID to append all buttons on the correct div
     var keyboardHangman = document.getElementById("keyboard");
     // Loop through the alphabet array and create buttons for each index
-    for (var i = 0; i < keyboardAlphabet.length; i++) {
+    // Note: Use "let" instead of "var" so that each click is unique to each button
+    for (let i = 0; i < keyboardAlphabet.length; i++) {
       // Create a button element
       var keyboardButton = document.createElement("button");
       // Set the button text to corresponding character in the array
