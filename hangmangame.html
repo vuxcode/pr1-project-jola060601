@@ -180,7 +180,14 @@
       <div id="keyboard"></div>
     </div>
   </main>
-  <script>
+  <script src="countries.js">
+    // Create the Hangman game
+    // Generate a random country from the list
+    var getRandomCountry = () => {
+      var { code, country } = countryList[Math.floor(Math.random() * countryList.length)]
+      // Output the random country on console log to confirm that the code works
+      console.log(country)
+    } 
     // Create an array containing all characters for the keyboard
     var keyboardAlphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "Ã", "É", "Í", "Ô", "'", "-"];
     // Get the keyboard ID to append all buttons on the correct div
