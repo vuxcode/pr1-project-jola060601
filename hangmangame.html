@@ -74,15 +74,18 @@
     #keyboard {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 auto; /* Centers the entire keyboard */
       padding: 15px;
-      gap: 15px;
+      gap: 10px;
+      max-width: 350px;
     }
     #keyboard button {
       background: #009DC4;
       color: white;
       cursor: pointer;
-      height: 25px;
-      width: 25px;
+      height: 35px;
+      width: 35px;
     }
     #stuckwidth {
       max-width: 300px;
@@ -193,7 +196,7 @@
         // When the button is clicked, an alert shows up with the clicked letter
         alert(keyboardAlphabet[i])
       });
-      // Add the button to the body element
+      // Add the button to the body tag
       keyboardHangman.appendChild(keyboardButton);
     }
   </script>
