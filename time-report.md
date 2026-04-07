@@ -38,3 +38,6 @@
 
 - 2026-04-02 14:30 Worked for 2.5 hours.
   - Worked on the design for the "Hangman Game" page.
+
+- 2026-04-07 14:50 Worked for 3 hours.
+  - Redesigned the "Hangman Game" page (mostly by merging the designs into one cohesive design).
