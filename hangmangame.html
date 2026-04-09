@@ -128,7 +128,7 @@
     // Get the correct <ul> where the lines for the randomly generated country will be displayed (i.e. the one designated with the class="currentword")
     var countryDisplay = document.querySelector(".currentword");
     // Generate a random country from the list from the "js"-file
-    var getRandomCountry = () => {
+    var getRandomCountry() {
       var { code, country } = countryList[Math.floor(Math.random() * countryList.length)]
       // Save the randomly generated country into the previously defined empty variable, and make the text uppercase
       currentCountry = country.toUpperCase();
@@ -172,7 +172,7 @@
       keyboardHangman.appendChild(keyboardButton);
     }
     // Start the game
-    var startGame = (keyboardButton, clickedCharacter) => {
+    var startGame(keyboardButton, clickedCharacter) {
       // Check to see if "currentCountry" contains the letters in question
       if (currentCountry.includes(clickedCharacter)) {
         // Confirm on the console log if the character exists in the country
