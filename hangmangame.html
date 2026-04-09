@@ -108,7 +108,7 @@
     <div id="stuckwidth">
       <img src="hangman/hangman-0.svg">
       <h1>Hangman Game</h1>
-      <h2>Guesses: 0 / 6</h2>
+      <h2 id="guesstext">Guesses: 0 / 6</h2>
     </div>
     <div id="widenbox">
       <ul class="currentword"></ul>
@@ -125,6 +125,8 @@
     var clickedCharacter = "";
     var wrongGuesses = 0;
     var maxGuesses = 6;
+    // Get the correct <h2> where the guesses are displayed (i.e. the one designated with the id="guesstext")
+    var guessesText = document.querySelector("#guesstext");
     // Get the correct <ul> where the lines for the randomly generated country will be displayed (i.e. the one designated with the class="currentword")
     var countryDisplay = document.querySelector(".currentword");
     // Create a function to generate a random country from the list from the "js"-file
@@ -196,7 +198,11 @@
       else {
         // Confirm on the console log that the letter doesn't exist in the country
         console.log(clickedCharacter + " doesn't exist on " + currentCountry);
+        // Increase the wrongGuesses variable by 1 every time the user guesses the wrong letter
+        wrongGuesses++;
       }
+      // Print out the guess numbers on screen even when changing
+      guessesText.innerText = `${wrongGuesses} / ${maxGuesses}`;
     }
   </script>
 </body>
