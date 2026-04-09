@@ -187,13 +187,15 @@
     // Create variables that will be needed in the game (have almost all of them empty at first because they will change during the game play)
     var currentCountry = "";
     var correctCharacters = [];
-    var wrongGuesses = "";
+    var wrongGuesses = 0;
     var maxGuesses = 6;
     // Generate a random country from the list from the "js"-file
     var getRandomCountry = () => {
       var { code, country } = countryList[Math.floor(Math.random() * countryList.length)]
+      // Save the randomly generated country into the previously defined empty variable, and make the text uppercase
+      currentCountry = country.toUpperCase();
       // Output the random country on console log to confirm that the code works
-      console.log(country)
+      console.log(currentCountry);
     }
     // Run the function
     getRandomCountry();
