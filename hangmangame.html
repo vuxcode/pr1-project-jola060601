@@ -136,7 +136,16 @@
       // Clear any lines every time the game restarts
       countryDisplay.innerHTML = "";
       // Create lines for every letter in "currentCountry" variable
-      countryDisplay.innerHTML = country.split("").map(() => `<li></li>`).join("");
+      countryDisplay.innerHTML = country.split("").map((char) => {
+        // Create an if-statement to make sure that an empty space won't generate a line underneath
+        if (char == " ") {
+          return `<li class="currentletter"></li>`;
+        }
+        // Otherwise, generate the necessary lines
+        else {
+          return `<li></li>`;
+        }
+      }).join("");
     }
     // Run the function
     getRandomCountry();
