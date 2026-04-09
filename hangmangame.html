@@ -111,72 +111,7 @@
       <h2>Guesses: 0 / 6</h2>
     </div>
     <div id="widenbox">
-      <ul class="currentword">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <!-- <li class="currentletter">s</li>
-        <li class="currentletter">a</li>
-        <li class="currentletter">i</li>
-        <li class="currentletter">n</li>
-        <li class="currentletter">t</li>
-        <li class="currentletter"> </li>
-        <li class="currentletter">v</li>
-        <li class="currentletter">i</li>
-        <li class="currentletter">n</li>
-        <li class="currentletter">c</li>
-        <li class="currentletter">e</li>
-        <li class="currentletter">n</li>
-        <li class="currentletter">t</li>
-        <li class="currentletter"> </li>
-        <li class="currentletter">a</li>
-        <li class="currentletter">n</li>
-        <li class="currentletter">d</li>
-        <li class="currentletter"> </li>
-        <li class="currentletter">t</li>
-        <li class="currentletter">h</li>
-        <li class="currentletter">e</li>
-        <li class="currentletter"> </li>
-        <li class="currentletter">g</li>
-        <li class="currentletter">r</li>
-        <li class="currentletter">e</li>
-        <li class="currentletter">n</li>
-        <li class="currentletter">a</li>
-        <li class="currentletter">d</li>
-        <li class="currentletter">i</li>
-        <li class="currentletter">n</li>
-        <li class="currentletter">e</li>
-        <li class="currentletter">s</li> -->
-      </ul>
+      <ul class="currentword"></ul>
       <div id="keyboard"></div>
     </div>
   </main>
@@ -189,6 +124,8 @@
     var correctCharacters = [];
     var wrongGuesses = 0;
     var maxGuesses = 6;
+    // Get the correct <ul> where the lines for the randomly generated country will be displayed (i.e. the one designated with the class="currentword")
+    var countryDisplay = document.querySelector(".currentword");
     // Generate a random country from the list from the "js"-file
     var getRandomCountry = () => {
       var { code, country } = countryList[Math.floor(Math.random() * countryList.length)]
@@ -196,6 +133,10 @@
       currentCountry = country.toUpperCase();
       // Output the random country on console log to confirm that the code works
       console.log(currentCountry);
+      // Clear any lines every time the game restarts
+      countryDisplay.innerHTML = "";
+      // Create lines for every letter in "currentCountry" variable
+      countryDisplay.innerHTML = country.split("").map(() => `<li class="currentletter"></li>`).join("");
     }
     // Run the function
     getRandomCountry();
