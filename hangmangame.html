@@ -165,7 +165,7 @@
       keyboardButton.addEventListener("click", (e) => {
         // When the button is clicked, the "clickedCharacter" variable is assigned the value of the character inscribed in the button
         clickedCharacter = keyboardAlphabet[i];
-        // Call upon the "startGame" function
+        // Call upon the "startGame" function when a button is pressed
         startGame(keyboardButton, clickedCharacter);
       });
       // Add the button to the body tag
@@ -173,13 +173,15 @@
     }
     // Create a function to start the game
     function startGame(keyboardButton, clickedCharacter) {
-      // Check to see if "currentCountry" contains the letters in question
+      // Check to see if "currentCountry" contains the letter in question
       if (currentCountry.includes(clickedCharacter)) {
         // Confirm on the console log if the character exists in the country
         console.log(clickedCharacter + " exists on " + currentCountry);
+        // Save the letter on the empty array
+        correctCharacters.push(clickedCharacter);
       }
       else {
-        // Confirm on the console log that the character doesn't exist in the country
+        // Confirm on the console log that the letter doesn't exist in the country
         console.log(clickedCharacter + " doesn't exist on " + currentCountry);
       }
     }
