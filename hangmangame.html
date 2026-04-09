@@ -127,8 +127,8 @@
     var maxGuesses = 6;
     // Get the correct <ul> where the lines for the randomly generated country will be displayed (i.e. the one designated with the class="currentword")
     var countryDisplay = document.querySelector(".currentword");
-    // Generate a random country from the list from the "js"-file
-    var getRandomCountry() {
+    // Create a function to generate a random country from the list from the "js"-file
+    function getRandomCountry() {
       var { code, country } = countryList[Math.floor(Math.random() * countryList.length)]
       // Save the randomly generated country into the previously defined empty variable, and make the text uppercase
       currentCountry = country.toUpperCase();
@@ -148,7 +148,7 @@
         }
       }).join("");
     }
-    // Run the function
+    // Run the function to generate a random country from the list from the "js"-file
     getRandomCountry();
     // Create an array containing all characters for the keyboard
     var keyboardAlphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "Ã", "É", "Í", "Ô", "'", "-"];
@@ -171,8 +171,8 @@
       // Add the button to the body tag
       keyboardHangman.appendChild(keyboardButton);
     }
-    // Start the game
-    var startGame(keyboardButton, clickedCharacter) {
+    // Create a function to start the game
+    function startGame(keyboardButton, clickedCharacter) {
       // Check to see if "currentCountry" contains the letters in question
       if (currentCountry.includes(clickedCharacter)) {
         // Confirm on the console log if the character exists in the country
@@ -183,6 +183,8 @@
         console.log(clickedCharacter + " doesn't exist on " + currentCountry);
       }
     }
+    // Run the function to start the game
+    startGame(keyboardButton, clickedCharacter);
   </script>
 </body>
 </html>
