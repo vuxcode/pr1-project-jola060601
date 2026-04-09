@@ -14,10 +14,15 @@
   - Edited the "countries.html" file to resemble an actual HTML-file.
     - I also added some code to count each letter usage for each country.
 
--2026-04-07 14:50 Worked for 3 hours.
+- 2026-04-07 14:50 Worked for 3 hours.
   - Created a "countries.js" file from "countries.html" file.
   - Generated an interactive keyboard using Javascript (and a little bit of HTML & CSS).
   - Created a function to randomly generate a country from the list.
+
+- 2026-04-09 14:50 Worked for 3 hours.
+  - The buttons respond now.
+  - The letters match the randomly generated country now.
+  - The guess counter responds now.
 
 > WE1
 
