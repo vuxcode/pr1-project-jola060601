@@ -165,6 +165,8 @@
       keyboardButton.addEventListener("click", (e) => {
         // When the button is clicked, the "clickedCharacter" variable is assigned the value of the character inscribed in the button
         clickedCharacter = keyboardAlphabet[i];
+        // Call upon the "startGame" function
+        startGame(keyboardButton, clickedCharacter);
       });
       // Add the button to the body tag
       keyboardHangman.appendChild(keyboardButton);
