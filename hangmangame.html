@@ -122,6 +122,7 @@
     // Create variables that will be needed in the game (have almost all of them empty at first because they will change during the game play)
     var currentCountry = "";
     var correctCharacters = [];
+    var clickedCharacter = "";
     var wrongGuesses = 0;
     var maxGuesses = 6;
     // Get the correct <ul> where the lines for the randomly generated country will be displayed (i.e. the one designated with the class="currentword")
@@ -161,12 +162,24 @@
       // Set the button text to corresponding character in the array
       keyboardButton.innerText = keyboardAlphabet[i];
       // Attach the "click" event to the button
-      keyboardButton.addEventListener("click", () => {
-        // When the button is clicked, an alert shows up with the clicked letter
-        alert(keyboardAlphabet[i])
+      keyboardButton.addEventListener("click", (e) => {
+        // When the button is clicked, the "clickedCharacter" variable is assigned the value of the character inscribed in the button
+        clickedCharacter = keyboardAlphabet[i];
       });
       // Add the button to the body tag
       keyboardHangman.appendChild(keyboardButton);
+    }
+    // Start the game
+    var startGame (keyboardButton, clickedCharacter) => {
+      // Check to see if "currentCountry" contains the letters in question
+      if (currentCountry.includes(clickedCharacter)) {
+        // Confirm on the console log if the character exists in the country
+        console.log(clickedCharacter + " exists on " + currentCountry);
+      }
+      else {
+        // Confirm on the console log that the character doesn't exist in the country
+        console.log(clickedCharacter + " doesn't exist on " + currentCountry);
+      }
     }
   </script>
 </body>
