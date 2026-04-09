@@ -179,6 +179,19 @@
         console.log(clickedCharacter + " exists on " + currentCountry);
         // Save the letter on the empty array
         correctCharacters.push(clickedCharacter);
+        // Find and get all <li> lines for the country that were created earlier in the "getRandomCountry()" function
+        var countryLines = countryDisplay.querySelectorAll("li");
+        // Loop through each letter in the country to find where the guessed letter matches (note that a letter can show up more than once on a country, this is factored in)
+        // [...currentCountry] will split up the country into an array of letters (as confirmed on the console)
+        [...currentCountry].forEach((char, index) => {
+          // Create an if-statement to find where the guessed letter matches
+          if (char == clickedCharacter) {
+            // Print out the letter on every line where it shows up
+            countryDisplay.querySelectorAll("li")[index].innerText = char;
+            // Add the "currentletter" class so that the line becomes transparent
+            countryDisplay.querySelectorAll("li")[index].classList.add("currentletter");
+          }
+        });
       }
       else {
         // Confirm on the console log that the letter doesn't exist in the country
