@@ -166,7 +166,8 @@
     // Note: Use "let" instead of "var" so that each click is unique to each button
     for (let i = 0; i < keyboardAlphabet.length; i++) {
       // Create a button element
-      var keyboardButton = document.createElement("button");
+      // Note: Use "let" instead of "var" so that each button has its unique reference for every turn in the loop
+      let keyboardButton = document.createElement("button");
       // Set the button text to corresponding character in the array
       keyboardButton.innerText = keyboardAlphabet[i];
       // Attach the "click" event to the button
