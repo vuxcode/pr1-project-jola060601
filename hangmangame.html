@@ -203,9 +203,9 @@
         // Increase the wrongGuesses variable by 1 every time the user guesses the wrong letter
         wrongGuesses++;
       }
+      // Print out the guess numbers on screen even when changing
+      guessesText.innerText = `${wrongGuesses} / ${maxGuesses}`;
     }
-    // Print out the guess numbers on screen even when changing
-    guessesText.innerText = `${wrongGuesses} / ${maxGuesses}`;
     // Change the hangman image depending on the number of wrong guesses
     hangmanImage.innerText = `hangman/hangman-${wrongGuesses}.svg`;
   </script>
