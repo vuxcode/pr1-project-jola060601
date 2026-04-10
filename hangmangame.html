@@ -206,7 +206,7 @@
       // Print out the guess numbers on screen even when changing
       guessesText.innerText = `${wrongGuesses} / ${maxGuesses}`;
       // Change the hangman image depending on the number of wrong guesses
-      hangmanImage.innerHTML = <img src="hangman/hangman-${wrongGuesses}.svg">;
+      hangmanImage.src = `hangman/hangman-${wrongGuesses}.svg`;
     }
   </script>
 </body>
