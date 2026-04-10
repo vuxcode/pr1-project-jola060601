@@ -50,3 +50,6 @@
 
 - 2026-04-07 14:50 Worked for 3 hours.
   - Redesigned the "Hangman Game" page (mostly by merging the designs into one cohesive design).
+
+- 2026-04-10 15:30 Worked for 1.5 hour.
+  - Added a new class with a design for any clicked button.
