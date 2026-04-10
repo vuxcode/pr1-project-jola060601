@@ -175,8 +175,6 @@
         clickedCharacter = keyboardAlphabet[i];
         // Call upon the "startGame" function when a button is pressed
         startGame(keyboardButton, clickedCharacter);
-        // Add a new class to a button that is clicked, so that it won't be clickable again
-        clickedCharacter[i].classList.add("clickedbutton");
       });
       // Add the button to the body tag
       keyboardHangman.appendChild(keyboardButton);
@@ -213,6 +211,8 @@
       guessesText.innerText = `${wrongGuesses} / ${maxGuesses}`;
       // Change the hangman image depending on the number of wrong guesses
       hangmanImage.src = `hangman/hangman-${wrongGuesses}.svg`;
+      // Add a new class to a button that is clicked, so that it won't be clickable again
+      clickedCharacter[i].classList.add("clickedbutton");
     }
   </script>
 </body>
