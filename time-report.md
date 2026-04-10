@@ -24,6 +24,10 @@
   - The letters match the randomly generated country now.
   - The guess counter responds now.
 
+- 2026-04-10 15:30 Worked for 1.5 hour.
+  - Changed hangman image after each wrong guess.
+  - Disabled buttons after one click.
+
 > WE1
 
 - 2026-03-23 14:00 Worked for 1.5 hour.
