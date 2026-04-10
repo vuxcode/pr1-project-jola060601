@@ -87,6 +87,10 @@
       height: 35px;
       width: 35px;
     }
+    #keyboard button.clickedbutton {
+      cursor: none;
+      opacity: 0.5;
+    }
     #stuckwidth {
       max-width: 300px;
     }
@@ -171,6 +175,8 @@
         clickedCharacter = keyboardAlphabet[i];
         // Call upon the "startGame" function when a button is pressed
         startGame(keyboardButton, clickedCharacter);
+        // Add a new class to a button that is clicked, so that it won't be clickable again
+        clickedCharacter.classList.add("clickedbutton");
       });
       // Add the button to the body tag
       keyboardHangman.appendChild(keyboardButton);
