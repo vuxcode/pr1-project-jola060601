@@ -56,3 +56,6 @@
 
 - 2026-04-10 15:30 Worked for 1.5 hour.
   - Added a new class with a design for any clicked button.
+
+- 2026-04-13 15:30 Worked for 1.5 hour.
+  - Created a the design for a modal to show up when the game is over.
