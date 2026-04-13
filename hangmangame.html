@@ -212,6 +212,8 @@
       // Print out the guess numbers on screen even when changing
       guessesText.innerText = `${wrongGuesses} / ${maxGuesses}`;
       // Change the hangman image depending on the number of wrong guesses
+      // Note: ".src" is used instead of ".innerHTML" because src only changes the search path to the image (src says "show another picture"),
+      // while innerHTML would remove the old replace the entire content with new HTML-code (innerHTML says "Throw everything in here and build up new HTML")
       hangmanImage.src = `hangman/hangman-${wrongGuesses}.svg`;
       // Add a new class to a button that is clicked, so that it won't be clickable again
       keyboardButton.classList.add("clickedbutton");
