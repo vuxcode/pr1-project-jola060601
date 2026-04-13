@@ -54,11 +54,21 @@
     }
     .game-modal {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      position: fixed; /* The modal stays in place */
+      z-index: 1; /* The modal will be placed ahead of the other content on the webpage */
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: auto; /* Enable scroll if needed */
       background: rgba(0, 157, 196, 0.5);
       width: 50px;
       height: 50px;
+    }
+    .game-modal #hangman-game-modal {
+      background: white;
+      margin: 50px auto;
+      padding: 50px;
     }
     .currentword {
       display: flex; /* Add the lines between each other (put it here instead of ".currentword li") */
