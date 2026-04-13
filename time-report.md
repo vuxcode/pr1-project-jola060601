@@ -28,6 +28,9 @@
   - Changed hangman image after each wrong guess.
   - Disabled buttons after one click.
 
+- 2026-04-13 15:30 Worked for 1.5 hour.
+  - Created a function to end the hangman game when the conditions are met.
+
 > WE1
 
 - 2026-03-23 14:00 Worked for 1.5 hour.
