@@ -52,6 +52,14 @@
     .menu a:hover {
       background-color: blue;
     }
+    .game-modal {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 157, 196, 0.5);
+      width: 50px;
+      height: 50px;
+    }
     .currentword {
       display: flex; /* Add the lines between each other (put it here instead of ".currentword li") */
       gap: 10px; /* Create a gap between the lines (alternative to "padding: 0 10px;"") */
@@ -109,6 +117,12 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+  <div class="game-modal">
+    <div id="hangman-game-modal">
+      <h2>Game Over!</h2>
+      <p>The correct word was: <b>MONGOLIA</b></p>
+    </div>
+  </div>
   <main class="containerbox">
     <div id="stuckwidth">
       <img src="hangman/hangman-0.svg">
@@ -122,8 +136,8 @@
   </main>
   <!-- Load the external "js"-file -->
   <script src="countries.js"></script>
+  <!-- Create the Hangman game -->
   <script>
-    // Create the Hangman game
     // Create variables that will be needed in the game (have almost all of them empty at first because they will change during the game play)
     var currentCountry = "";
     var correctCharacters = [];
