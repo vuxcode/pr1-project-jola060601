@@ -181,6 +181,18 @@
       // Add the button to the body tag
       keyboardHangman.appendChild(keyboardButton);
     }
+    // Create a function to end the game
+    function endGame(isVictory) {
+      // Create an if-statement to process the result of the game
+      if (isVictory == true) {
+        // Print out a message on the console
+        console.log("Congratulations! You correctly guesses the word: " + currentCountry + ".");
+      }
+      else {
+        // Print out a message on the console
+        console.log("Game Over! The word was: " + currentCountry + ".");
+      }
+    }
     // Create a function to start the game
     function startGame(keyboardButton, clickedCharacter) {
       // Check to see if "currentCountry" contains the letter in question
@@ -217,6 +229,11 @@
       hangmanImage.src = `hangman/hangman-${wrongGuesses}.svg`;
       // Add a new class to a button that is clicked, so that it won't be clickable again
       keyboardButton.classList.add("clickedbutton");
+      // Create conditions to call upon the endGame function
+      // If the user guesses the word correctly
+      if (correctCharacters.length == currentCountry.length) return endGame(true);
+      // If the user guesses the word incorrectly
+      if (wrongGuesses == maxGuesses) return endGame(false);
     }
   </script>
 </body>
