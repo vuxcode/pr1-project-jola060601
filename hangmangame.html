@@ -221,16 +221,14 @@
     }
     // Create a function to end the game
     function endGame(isVictory) {
+      // Turn the game modal on
+      hangmanModal.classList.add("show");
       // Create an if-statement to process the result of the game
       if (isVictory == true) {
-        // Turn the game modal on
-        hangmanModal.classList.add("show");
         // Print out a message on the console
         console.log("Congratulations! You correctly guesses the word: " + currentCountry + ".");
       }
       else {
-        // Turn the game modal on
-        hangmanModal.classList.add("show");
         // Print out a message on the console
         console.log("Game Over! The word was: " + currentCountry + ".");
       }
