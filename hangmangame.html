@@ -61,12 +61,17 @@
       left: 0;
       top: 0;
       margin: 0;
+      opacity: 0;
       width: 100vw;
       height: 100vh;
       overflow: auto; /* Enable scroll if needed */
       background: rgba(0, 157, 196, 0.5);
+      transition: opacity 1s;
     }
-    .game-modal #hangman-game-modal {
+    .game-modal.show {
+      opacity: 1;
+    }
+    .game-modal.show #hangman-game-modal {
       background: white;
       margin: 10px auto;
       padding: 10px;
@@ -164,6 +169,8 @@
     var hangmanImage = document.querySelector("#stuckwidth img");
     // Get the correct <ul> where the lines for the randomly generated country will be displayed (i.e. the one designated with the class="currentword")
     var countryDisplay = document.querySelector(".currentword");
+    // Get the correct <div> where the game modal is displayed
+    var hangmanModal = document.querySelector(".game-modal");
     // Create a function to generate a random country from the list from the "js"-file
     function getRandomCountry() {
       var { code, country } = countryList[Math.floor(Math.random() * countryList.length)]
@@ -213,10 +220,14 @@
     function endGame(isVictory) {
       // Create an if-statement to process the result of the game
       if (isVictory == true) {
+        // Turn the game modal on
+        hangmanModal.classList.add("show");
         // Print out a message on the console
         console.log("Congratulations! You correctly guesses the word: " + currentCountry + ".");
       }
       else {
+        // Turn the game modal on
+        hangmanModal.classList.add("show");
         // Print out a message on the console
         console.log("Game Over! The word was: " + currentCountry + ".");
       }
@@ -259,9 +270,15 @@
       keyboardButton.classList.add("clickedbutton");
       // Create conditions to call upon the endGame function
       // If the user guesses the word correctly
-      if (correctCharacters.length == currentCountry.length) return endGame(true);
+      if (correctCharacters.length == currentCountry.length) {
+        // Exit the function by calling upon the "endGame" function
+        return endGame(true);
+      }
       // If the user guesses the word incorrectly
-      if (wrongGuesses == maxGuesses) return endGame(false);
+      if (wrongGuesses == maxGuesses) {
+        // Exit the function by calling upon the "endGame" function
+        return endGame(false);
+      }
     }
   </script>
 </body>
