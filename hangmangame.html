@@ -53,7 +53,7 @@
       background-color: blue;
     }
     .game-modal {
-      display: flex;
+      display: none;
       justify-content: center;
       align-items: center;
       position: fixed; /* The modal stays in place */
@@ -70,6 +70,7 @@
     }
     .game-modal.show {
       opacity: 1;
+      display: flex;
     }
     .game-modal.show #hangman-game-modal {
       background: white;
