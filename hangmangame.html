@@ -275,7 +275,7 @@
       // Create a local variable to control if all <li> have a letter (i.e. no <li> is empty)
       var isWon = [...allLetters].every(li => li.innerText != "");
       // If the user guesses the word correctly
-      if (isWon = true) {
+      if (isWon) {
         // Exit the function by calling upon the "endGame" function
         return endGame(true);
       }
