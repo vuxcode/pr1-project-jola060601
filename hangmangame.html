@@ -141,7 +141,7 @@
     <div id="hangman-game-modal">
       <h2>Game Over!</h2>
       <p>The correct country was: <b>MONGOLIA</b></p>
-      <button>Play again</button>
+      <button onclick="resetGame()">Play again</button>
       <button>Return</button>
     </div>
   </div>
@@ -174,6 +174,19 @@
     var countryDisplay = document.querySelector(".currentword");
     // Get the correct <div> where the game modal is displayed
     var hangmanModal = document.querySelector(".game-modal");
+    // Create a function to reset the game
+    function resetGame() {
+      // Clear all variables every time the game restarts
+      currentCountry = "";
+      correctCharacters = [];
+      clickedCharacter = "";
+      wrongGuesses = 0;
+      countryDisplay.innerHTML = "";
+      hangmanModal.classList.remove("show");
+      keyboardButton.classList.remove("clickedbutton");
+    }
+    // Run the resetGame function
+    resetGame();
     // Create a function to generate a random country from the list from the "js"-file
     function getRandomCountry() {
       var { code, country } = countryList[Math.round(Math.random() * countryList.length)];
@@ -181,8 +194,6 @@
       currentCountry = country.toUpperCase();
       // Output the random country on console log to confirm that the code works
       console.log(currentCountry);
-      // Clear any lines every time the game restarts
-      countryDisplay.innerHTML = "";
       // Create lines for every letter in "currentCountry" variable
       countryDisplay.innerHTML = country.split("").map((char) => {
         // Create an if-statement to make sure that an empty space won't generate a line underneath
