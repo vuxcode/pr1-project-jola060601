@@ -196,19 +196,6 @@
       // Add the button to the body tag
       keyboardHangman.appendChild(keyboardButton);
     }
-    // Create a function to reset the game
-    function resetGame() {
-      // Clear all variables every time the game restarts
-      currentCountry = "";
-      correctCharacters = [];
-      clickedCharacter = "";
-      wrongGuesses = 0;
-      countryDisplay.innerHTML = "";
-      hangmanModal.classList.remove("show");
-      keyboardHangman.classList.remove("clickedbutton");
-    }
-    // Run the resetGame function
-    resetGame();
     // Create a function to generate a random country from the list from the "js"-file
     function getRandomCountry() {
       // Use Math.floor to round down so that the number in countryList.length won't be called upon and crash the game (index starts at 0 and ends in countryList.length - 1)
@@ -230,8 +217,30 @@
         }
       }).join("");
     }
-    // Run the function to generate a random country from the list from the "js"-file
-    getRandomCountry();
+    // Create a function to reset the game
+    function resetGame() {
+      // Clear all variables every time the game restarts
+      currentCountry = "";
+      correctCharacters = [];
+      clickedCharacter = "";
+      wrongGuesses = 0;
+      // Clear all UI elements (i.e. text, images, keyboard and modal) every time the game restarts
+      // Note: "hangmanImage.src" is used instead of "hangmanImage.innerHTML" because src only changes the search path to the image (src says "show another picture"), while innerHTML would remove the old replace the entire content with new HTML-code (innerHTML says "Throw everything in here and build up new HTML")
+      hangmanImage.src = `hangman/hangman-${wrongGuesses}.svg`; // Change the hangman image depending on the number of wrong guesses
+      guessesText.innerText = `${wrongGuesses} / ${maxGuesses}`; // Print out the guess numbers on screen
+      countryDisplay.innerHTML = ""; // Remove the old <li> lines before adding new ones
+      hangmanModal.classList.remove("show");
+      // Create a local variable to later remove the "clickedbutton" class from each and every button
+      var allButtons = keyboardHangman.querySelectorAll("button");
+      // Loop through each button to remove the "clickedbutton" class (if present)
+      allButtons.forEach(button => {
+        button.classList.remove("clickedbutton");
+      });
+      // Run the function to generate a random country from the list from the "js"-file
+      getRandomCountry();
+    }
+    // Run the resetGame function
+    resetGame();
     // Create a function to end the game
     function endGame(isVictory) {
       // Turn the game modal on
@@ -279,12 +288,6 @@
         // Increase the wrongGuesses variable by 1 every time the user guesses the wrong letter
         wrongGuesses++;
       }
-      // Print out the guess numbers on screen even when changing
-      guessesText.innerText = `${wrongGuesses} / ${maxGuesses}`;
-      // Change the hangman image depending on the number of wrong guesses
-      // Note: ".src" is used instead of ".innerHTML" because src only changes the search path to the image (src says "show another picture"),
-      // while innerHTML would remove the old replace the entire content with new HTML-code (innerHTML says "Throw everything in here and build up new HTML")
-      hangmanImage.src = `hangman/hangman-${wrongGuesses}.svg`;
       // Add a new class to a button that is clicked, so that it won't be clickable again
       keyboardButton.classList.add("clickedbutton");
       // Create conditions to call upon the endGame function
