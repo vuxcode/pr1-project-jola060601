@@ -53,7 +53,7 @@
       background-color: blue;
     }
     .game-modal {
-      display: none;
+      display: flex;
       justify-content: center;
       align-items: center;
       position: fixed; /* The modal stays in place */
@@ -62,15 +62,16 @@
       top: 0;
       margin: 0;
       opacity: 0;
+      pointer-events: none; /* The mouse pointer will not target the game modal */
       width: 100vw;
       height: 100vh;
       overflow: auto; /* Enable scroll if needed */
       background: rgba(0, 157, 196, 0.5);
-      transition: opacity 1s;
+      transition: opacity 1s ease; /* Transition into opacity from 0 to 1 (.show) in 1 second */
     }
     .game-modal.show {
       opacity: 1;
-      display: flex;
+      pointer-events: auto; /* The mouse pointer will target the game modal */
     }
     .game-modal.show #hangman-game-modal {
       background: white;
