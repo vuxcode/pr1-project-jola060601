@@ -211,7 +211,8 @@
     resetGame();
     // Create a function to generate a random country from the list from the "js"-file
     function getRandomCountry() {
-      var { code, country } = countryList[Math.round(Math.random() * countryList.length)];
+      // Use Math.floor to round down so that the number in countryList.length won't be called upon and crash the game (index starts at 0 and ends in (countryList.length - 1))
+      var { code, country } = countryList[Math.round(Math.floor() * countryList.length)];
       // Save the randomly generated country into the previously defined empty variable, and make the text uppercase
       currentCountry = country.toUpperCase();
       // Output the random country on console log to confirm that the code works
