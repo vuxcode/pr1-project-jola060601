@@ -31,6 +31,9 @@
 - 2026-04-13 15:30 Worked for 1.5 hour.
   - Created a function to end the hangman game when the conditions are met.
 
+- 2026-04-14 15:20 Worked for 3.5 hours.
+  - Finished coding for hangman game.
+
 > WE1
 
 - 2026-03-23 14:00 Worked for 1.5 hour.
