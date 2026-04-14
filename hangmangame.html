@@ -142,7 +142,7 @@
       <h2>Game Over!</h2>
       <p>The correct country was: <b>MONGOLIA</b></p>
       <button onclick="resetGame()">Play again</button>
-      <a href="games.html"><button>Return</button></a>
+      <button onclick="window.location.href='games.html'">Return</button>
     </div>
   </div>
   <main class="containerbox">
@@ -203,7 +203,7 @@
       // Save the randomly generated country into the previously defined empty variable, and make the text uppercase
       currentCountry = country.toUpperCase();
       // Output the random country on console log to confirm that the code works
-      console.log(currentCountry);
+      // console.log(currentCountry);
       // Create lines for every letter in "currentCountry" variable
       countryDisplay.innerHTML = country.split("").map((char) => {
         // Create an if-statement to make sure that an empty space won't generate a line underneath
@@ -250,13 +250,13 @@
         hangmanModal.querySelector("h2").innerText = `${"Congratulations"}`;
         hangmanModal.querySelector("p").innerHTML = `${`You guessed the correct country: <b>${currentCountry}</b>`}`;
         // Print out a message on the console
-        console.log("Congratulations! You correctly guesses the word: " + currentCountry + ".");
+        // console.log("Congratulations! You correctly guesses the word: " + currentCountry + ".");
       }
       else {
         // Change the text displayed on the game modal
         hangmanModal.querySelector("b").innerHTML = `${currentCountry}`;
         // Print out a message on the console
-        console.log("Game Over! The word was: " + currentCountry + ".");
+        // console.log("Game Over! The word was: " + currentCountry + ".");
       }
     }
     // Create a function to start the game
@@ -264,7 +264,7 @@
       // Check to see if "currentCountry" contains the letter in question
       if (currentCountry.includes(clickedCharacter)) {
         // Confirm on the console log if the character exists in the country
-        console.log(clickedCharacter + " exists on " + currentCountry);
+        // console.log(clickedCharacter + " exists on " + currentCountry);
         // Save the letter on the empty array
         correctCharacters.push(clickedCharacter);
         // Find and get all <li> lines for the country that were created earlier in the "getRandomCountry()" function
@@ -283,7 +283,7 @@
       }
       else {
         // Confirm on the console log that the letter doesn't exist in the country
-        console.log(clickedCharacter + " doesn't exist on " + currentCountry);
+        // console.log(clickedCharacter + " doesn't exist on " + currentCountry);
         // Increase the wrongGuesses variable by 1 every time the user guesses the wrong letter
         wrongGuesses++;
       }
