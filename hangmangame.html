@@ -174,6 +174,28 @@
     var countryDisplay = document.querySelector(".currentword");
     // Get the correct <div> where the game modal is displayed
     var hangmanModal = document.querySelector(".game-modal");
+    // Create an array containing all characters for the keyboard
+    var keyboardAlphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "Ã", "É", "Í", "Ô", "'", "-"];
+    // Get the keyboard ID to append all buttons on the correct div
+    var keyboardHangman = document.getElementById("keyboard");
+    // Loop through the alphabet array and create buttons for each index
+    // Note: Use "let" instead of "var" so that each click is unique to each button
+    for (let i = 0; i < keyboardAlphabet.length; i++) {
+      // Create a button element
+      // Note: Use "let" instead of "var" so that each button has its unique reference for every turn in the loop
+      let keyboardButton = document.createElement("button");
+      // Set the button text to corresponding character in the array
+      keyboardButton.innerText = keyboardAlphabet[i];
+      // Attach the "click" event to the button
+      keyboardButton.addEventListener("click", (e) => {
+        // When the button is clicked, the "clickedCharacter" variable is assigned the value of the character inscribed in the button
+        clickedCharacter = keyboardAlphabet[i];
+        // Call upon the "startGame" function when a button is pressed
+        startGame(keyboardButton, clickedCharacter);
+      });
+      // Add the button to the body tag
+      keyboardHangman.appendChild(keyboardButton);
+    }
     // Create a function to reset the game
     function resetGame() {
       // Clear all variables every time the game restarts
@@ -209,28 +231,6 @@
     }
     // Run the function to generate a random country from the list from the "js"-file
     getRandomCountry();
-    // Create an array containing all characters for the keyboard
-    var keyboardAlphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "Ã", "É", "Í", "Ô", "'", "-"];
-    // Get the keyboard ID to append all buttons on the correct div
-    var keyboardHangman = document.getElementById("keyboard");
-    // Loop through the alphabet array and create buttons for each index
-    // Note: Use "let" instead of "var" so that each click is unique to each button
-    for (let i = 0; i < keyboardAlphabet.length; i++) {
-      // Create a button element
-      // Note: Use "let" instead of "var" so that each button has its unique reference for every turn in the loop
-      let keyboardButton = document.createElement("button");
-      // Set the button text to corresponding character in the array
-      keyboardButton.innerText = keyboardAlphabet[i];
-      // Attach the "click" event to the button
-      keyboardButton.addEventListener("click", (e) => {
-        // When the button is clicked, the "clickedCharacter" variable is assigned the value of the character inscribed in the button
-        clickedCharacter = keyboardAlphabet[i];
-        // Call upon the "startGame" function when a button is pressed
-        startGame(keyboardButton, clickedCharacter);
-      });
-      // Add the button to the body tag
-      keyboardHangman.appendChild(keyboardButton);
-    }
     // Create a function to end the game
     function endGame(isVictory) {
       // Turn the game modal on
