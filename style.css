@@ -67,6 +67,10 @@ ul {
   background: rgba(0, 157, 196, 0.5);
   transition: opacity 1s ease; /* Transition into opacity from 0 to 1 (.show) in 1 second */
 }
+.game-modal.begin {
+  opacity: 1;
+  pointer-events: auto; /* The mouse pointer will target the game modal */
+}
 .game-modal.show {
   opacity: 1;
   pointer-events: auto; /* The mouse pointer will target the game modal */
