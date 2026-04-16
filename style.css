@@ -51,7 +51,7 @@ ul {
   background-color: blue;
 }
 .game-modal {
-  display: flex;
+  display: none; /* The modal will be hidden by default */
   justify-content: center;
   align-items: center;
   position: fixed; /* The modal stays in place */
@@ -67,15 +67,13 @@ ul {
   background: rgba(0, 157, 196, 0.5);
   transition: opacity 1s ease; /* Transition into opacity from 0 to 1 (.show) in 1 second */
 }
-.game-modal.begin {
-  opacity: 1;
-  pointer-events: auto; /* The mouse pointer will target the game modal */
-}
 .game-modal.show {
+  display: flex;
   opacity: 1;
   pointer-events: auto; /* The mouse pointer will target the game modal */
 }
 .game-modal #hangman-game-modal {
+  display: flex;
   background: white;
   border-radius: 15px;
   margin: 10px auto;
