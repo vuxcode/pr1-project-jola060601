@@ -90,6 +90,7 @@ ul {
 }
 .game-modal #hangman-game-modal button {
   margin-bottom: 5px;
+  padding: 3px;
 }
 .currentword {
   display: flex; /* Add the lines between each other (put it here instead of ".currentword li") */
