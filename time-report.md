@@ -34,6 +34,10 @@
 - 2026-04-14 15:20 Worked for 3.5 hours.
   - Finished coding for hangman game.
 
+- 2026-04-16 15:05 Worked for 3 hours.
+  - Created a "hangmangame.js" file to house script from "hangmangame.html" to not make it too bloated.
+  - Cleaned up code so that the game would run when pushing a play button
+
 > WE1
 
 - 2026-03-23 14:00 Worked for 1.5 hour.
