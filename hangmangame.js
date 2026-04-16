@@ -66,6 +66,7 @@ function resetGame() {
   hangmanImage.src = `hangman/hangman-${wrongGuesses}.svg`; // Change the hangman image depending on the number of wrong guesses
   guessesText.innerText = `${wrongGuesses} / ${maxGuesses}`; // Print out the guess numbers on screen
   countryDisplay.innerHTML = ""; // Remove the old <li> lines before adding new ones
+  hangmanModal.classList.remove("begin");
   hangmanModal.classList.remove("show");
   // Create a local variable to later remove the "clickedbutton" class from each and every button
   var allButtons = keyboardHangman.querySelectorAll("button");
