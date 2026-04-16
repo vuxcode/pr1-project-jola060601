@@ -36,7 +36,7 @@
 
 - 2026-04-16 15:05 Worked for 3 hours.
   - Created a "hangmangame.js" file to house script from "hangmangame.html" to not make it too bloated.
-  - Cleaned up code so that the game would run when pushing a play button
+  - Cleaned up code so that the game would run when pushing a play button.
 
 > WE1
 
@@ -70,3 +70,7 @@
 - 2026-04-14 15:20 Worked for 3.5 hours.
   - Finished designing the hangman game page.
   - Created a new CSS-file named "style.css" to house all CSS for my webpages.
+  
+- 2026-04-16 15:05 Worked for 3 hours.
+  - Added links to "style.css" for all webpages.
+  - Styled the hangman page so that it opens up with a game modal to either start the game or return to the games page.
