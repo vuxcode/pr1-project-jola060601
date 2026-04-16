@@ -68,12 +68,10 @@ ul {
   transition: opacity 1s ease; /* Transition into opacity from 0 to 1 (.show) in 1 second */
 }
 .game-modal.show {
-  display: flex;
   opacity: 1;
   pointer-events: auto; /* The mouse pointer will target the game modal */
 }
 .game-modal #hangman-game-modal {
-  display: flex;
   background: white;
   border-radius: 15px;
   margin: 10px auto;
