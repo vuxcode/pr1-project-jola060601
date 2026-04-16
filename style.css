@@ -76,7 +76,10 @@ ul {
   border-radius: 15px;
   margin: 10px auto;
   padding: 10px;
+  max-width: 25vw;
+  max-height: 15vh;
   text-align: center;
+  align-content: center;
 }
 .currentword {
   display: flex; /* Add the lines between each other (put it here instead of ".currentword li") */
