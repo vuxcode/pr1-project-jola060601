@@ -86,6 +86,7 @@ function endGame(isVictory) {
   if (isVictory == true) {
     // Change the text displayed on the game modal
     hangmanModal.querySelector("h2").innerText = `${"Congratulations!"}`;
+    hangmanModal.querySelector("button").innerText = `${"Replay"}`
     hangmanModal.querySelector("p").innerHTML = `${`You guessed the correct country: <b>${currentCountry}</b>`}`;
     // Print out a message on the console
     // console.log("Congratulations! You correctly guesses the word: " + currentCountry + ".");
@@ -93,6 +94,7 @@ function endGame(isVictory) {
   else {
     // Change the text displayed on the game modal
     hangmanModal.querySelector("h2").innerText = `${"Game Over!"}`;
+    hangmanModal.querySelector("button").innerText = `${"Replay"}`
     hangmanModal.querySelector("p").innerHTML = `${`The correct country was: <b>${currentCountry}</b>`}`;
     // Print out a message on the console
     // console.log("Game Over! The word was: " + currentCountry + ".");
