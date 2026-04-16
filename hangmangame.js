@@ -76,8 +76,6 @@ function resetGame() {
   // Run the function to generate a random country from the list from the "js"-file
   getRandomCountry();
 }
-// Run the resetGame function
-resetGame();
 // Create a function to end the game
 function endGame(isVictory) {
   // Turn the game modal on
