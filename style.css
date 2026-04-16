@@ -82,6 +82,15 @@ ul {
   align-content: center;
   overflow: auto;
 }
+.game-modal #hangman-game-modal h2 {
+  padding: 5px 0;
+}
+.game-modal #hangman-game-modal p {
+  padding-bottom: 10px;
+}
+.game-modal #hangman-game-modal button {
+  margin-bottom: 5px;
+}
 .currentword {
   display: flex; /* Add the lines between each other (put it here instead of ".currentword li") */
   gap: 10px; /* Create a gap between the lines (alternative to "padding: 0 10px;"") */
