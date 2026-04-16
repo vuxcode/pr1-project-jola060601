@@ -12,6 +12,8 @@ var hangmanImage = document.querySelector("#stuckwidth img");
 var countryDisplay = document.querySelector(".currentword");
 // Get the correct <div> where the game modal is displayed
 var hangmanModal = document.querySelector(".game-modal");
+// Get the correct <main> where the container box is displayed
+var hangmanContainer = document.querySelector(".containerbox");
 // Create an array containing all characters for the keyboard
 var keyboardAlphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "Ã", "É", "Í", "Ô", "'", "-"];
 // Get the keyboard ID to append all buttons on the correct div
@@ -66,6 +68,7 @@ function resetGame() {
   hangmanImage.src = `hangman/hangman-${wrongGuesses}.svg`; // Change the hangman image depending on the number of wrong guesses
   guessesText.innerText = `${wrongGuesses} / ${maxGuesses}`; // Print out the guess numbers on screen
   countryDisplay.innerHTML = ""; // Remove the old <li> lines before adding new ones
+  hangmanContainer.classList.remove("hide");
   hangmanModal.classList.remove("show");
   // Create a local variable to later remove the "clickedbutton" class from each and every button
   var allButtons = keyboardHangman.querySelectorAll("button");
