@@ -6,8 +6,12 @@
 body {
   background: #009DC4;
 }
-div {
+h1, div {
   margin: 10px;
+}
+ul {
+  padding: 0 0 0 20px;
+  list-style-type: disc;
 }
 .containerbox {
   display: flex;
