@@ -38,6 +38,9 @@
   - Created a "hangmangame.js" file to house script from "hangmangame.html" to not make it too bloated.
   - Cleaned up code so that the game would run when pushing a play button.
 
+- 2026-04-20 14:00 Worked for 1.5 hour.
+  - Created some code to randomly generate forty codes & countries from "countries.js" file.
+
 > WE1
 
 - 2026-03-23 14:00 Worked for 1.5 hour.
