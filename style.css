@@ -143,3 +143,11 @@ li.currentletter {
 #widenbox {
   max-width: 100%;
 }
+#widenbox button {
+  display: block;
+  background: #009DC4;
+  color: white;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+}
