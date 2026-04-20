@@ -4,11 +4,11 @@ var correctCharacters = [];
 var clickedCharacter = "";
 var wrongGuesses = 0;
 var maxGuesses = 6;
-// Get the correct <h2> where the guesses are displayed (i.e. the one designated with the id="guesstext")
+// Get the correct <h2> where the guesses are displayed (i.e. the <div> designated with the id="guesstext")
 var guessesText = document.querySelector("#guesstext span");
 // Get the correct <img> where the guesses are displayed (i.e. the <div> designated with the id="stuckwidth")
 var hangmanImage = document.querySelector("#stuckwidth img");
-// Get the correct <ul> where the lines for the randomly generated country will be displayed (i.e. the one designated with the class="currentword")
+// Get the correct <ul> where the lines for the randomly generated country will be displayed (i.e. the <ul> designated with the class="currentword")
 var countryDisplay = document.querySelector(".currentword");
 // Get the correct <div> where the game modal is displayed
 var hangmanModal = document.querySelector(".game-modal");
