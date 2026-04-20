@@ -48,11 +48,13 @@
     function getFortyCountries() {
       // Use Math.floor to round down so that the number in countryList.length won't be called upon and crash the game (index starts at 0 and ends in countryList.length - 1)
       var { code, country } = countryList[Math.floor(Math.random() * countryList.length)];
-      // Save the randomly generated country into the previously defined empty variable
-      randomArray.push({ code, country });
-      // Output the random country on console log to confirm that the code works
+      // Save the randomly generated countries into the previously defined empty variable, and make the text uppercase
+      randomArray = { code, country };
+      // Output the array on console log to confirm that the code works
       console.log(randomArray);
     }
+    // Run the function to generate forty random countries from the list from the "js"-file
+    getFortyCountries();
   </script>
 </body>
 </html>
