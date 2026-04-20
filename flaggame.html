@@ -51,7 +51,7 @@
         // Use Math.floor to round down so that the number in countryList.length won't be called upon and crash the game (index starts at 0 and ends in countryList.length - 1)
         var { code, country } = countryList[Math.floor(Math.random() * countryList.length)];
         // Save the randomly generated codes and countries into the previously defined empty arrays
-        randomArray.push({ code, country });
+        randomArray.push([code, country]);
         codeArray.push(code);
         countryArray.push(country);
       }
