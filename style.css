@@ -149,5 +149,6 @@ li.currentletter {
   color: white;
   cursor: pointer;
   height: 35px;
-  width: 35px;
+  width: 350px;
+  margin: 10px;
 }
