@@ -77,3 +77,7 @@
 - 2026-04-16 15:05 Worked for 3 hours.
   - Added links to "style.css" for all webpages.
   - Styled the hangman page so that it opens up with a game modal to either start the game or return to the games page.
+
+- 2026-04-20 14:00 Worked for 1.5 hour.
+  - Validated all existing pages & "style.css".
+  - Created the beginnings of the "Flag Game" page.
