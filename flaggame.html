@@ -23,7 +23,7 @@
     </div>
     <div id="widenbox">
         <h1>Which country does this flag belong to?</h1>
-        <h2>Time remaining: 30s</h2>
+        <h2 id="timernumber">Time remaining: <span>30</span>s</h2>
         <button>Choice 1</button>
         <button>Choice 2</button>
         <button>Choice 3</button>
@@ -45,10 +45,12 @@
     var correctPoints = 0;
     var maxPoints = 10;
     var timer = 30;
-    // Get the correct <h2> where the question numbers are displayed (i.e. the <div> designated with the id="questiontext")
+    // Get the correct <h2> where the question numbers are displayed (i.e. the <h2> designated with the id="questiontext")
     var questionText = document.querySelector("#questiontext span");
-    // Get the correct <h2> where the point numbers are displayed (i.e. the <div> designated with the id="pointstext")
+    // Get the correct <h2> where the point numbers are displayed (i.e. the <h2> designated with the id="pointstext")
     var pointsText = document.querySelector("#pointstext span");
+    // Get the correct <h2> where the timer number is displayed (i.e. the <h2> designated with the id="timernumber")
+    var timerNumber = document.querySelector("#timernumber span");
     // Get the correct <img> where the flag is displayed (i.e. the <div> designated with the id="questiontext")
     var flagImage = document.querySelector("#stuckwidth img");
     // Create a function to generate forty random countries from the list from the "js"-file
@@ -71,6 +73,8 @@
     getFortyCountries();
     // Create a function to have the timer count down
     function countDown() {
+      // Print out the correct number on screen
+      timerNumber.querySelector("span").innerHTML = `${timer}`;
       // Output the correct time
       console.log(timer);
       // Create a for-loop to count down if the number is equal to or greater than zero
