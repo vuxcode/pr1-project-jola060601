@@ -97,13 +97,13 @@
       // Create a for-loop to extract four items from randomArray
       for (var n = 0; n < 4; n++) {
         // Remove from randomArray and save in fourSelections
-        fourSelections = randomArray.pop();
+        fourSelections.unshift(randomArray.pop());
       }
       // Output the array on the console
       console.log(fourSelections);
     }
     // Run the startGame function
-    // startGame();
+    startGame();
   </script>
 </body>
 </html>
