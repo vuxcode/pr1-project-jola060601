@@ -40,6 +40,7 @@
     var codeArray = [];
     var countryArray = [];
     var fourSelections = [];
+    var fourCodes = [];
     var fourCountries = [];
     var questionNumber = 1;
     var maxQuestions = 10;
@@ -102,11 +103,14 @@
       }
       // Output the array on the console
       console.log(fourSelections);
-      // Create a for-loop to extract the country names from the new array
+      // Create a for-loop to extract the country codes and names from the new array
       for (var d = 0; d < 4; d++) {
-        // Show the country names in the new array without removing them from fourSelections
+        // Show the country codes and names in the new arrays without removing them from fourSelections
+        fourCodes.push(fourSelections[d][0]);
         fourCountries.push(fourSelections[d][1]);
       }
+      // Output the new arrays on the console
+      console.log(fourCodes);
       console.log(fourCountries);
     }
     // Run the startGame function
