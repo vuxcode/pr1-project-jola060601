@@ -44,6 +44,7 @@
     var maxQuestions = 10;
     var correctPoints = 0;
     var maxPoints = 10;
+    var timer = 30;
     // Get the correct <h2> where the question numbers are displayed (i.e. the <div> designated with the id="questiontext")
     var questionText = document.querySelector("#questiontext span");
     // Get the correct <h2> where the point numbers are displayed (i.e. the <div> designated with the id="pointstext")
@@ -68,8 +69,25 @@
     }
     // Run the function to generate forty random countries from the list from the "js"-file
     getFortyCountries();
-    // Create a function to start the game
-    function startGame() {}
+    // Create a function to have the timer count down
+    function countDown() {
+      // Output the correct time
+      console.log(timer);
+      // Create a for-loop to count down if the number is equal to or greater than zero
+      if (timer >= 0) {
+        // Reduce the number by one
+        timer--;
+        // Create a loop and run the function again in one second
+        setTimeout(countDown, 1000);
+      }
+      // When the timer is less than zero
+      else {
+        // Stop the function here
+        console.log("Time out!");
+      }
+    }
+    // Run the countdown function
+    countDown();
   </script>
 </body>
 </html>
