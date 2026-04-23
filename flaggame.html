@@ -18,7 +18,8 @@
     <div id="stuckwidth">
       <img src="flags/ad.svg" alt="Picture of a country's flag">
       <h1>Flag Game</h1>
-      <h2 id="questiontext">Question: <span>1 / 10</span></h2><h2 id="pointstext">Points: <span>0 / 10</span></h2>
+      <h2 id="questiontext">Question: <span>1 / 10</span></h2>
+      <h2 id="pointstext">Points: <span>0 / 10</span></h2>
     </div>
     <div id="widenbox">
         <h1>Which country does this flag belong to?</h1>
@@ -38,12 +39,15 @@
     var randomArray = [];
     var codeArray = [];
     var countryArray = [];
+    var fourSelections = [];
     var questionNumber = 1;
     var maxQuestions = 10;
     var correctPoints = 0;
     var maxPoints = 10;
     // Get the correct <h2> where the question numbers are displayed (i.e. the <div> designated with the id="questiontext")
     var questionText = document.querySelector("#questiontext span");
+    // Get the correct <h2> where the point numbers are displayed (i.e. the <div> designated with the id="pointstext")
+    var pointsText = document.querySelector("#pointstext span");
     // Get the correct <img> where the flag is displayed (i.e. the <div> designated with the id="questiontext")
     var flagImage = document.querySelector("#stuckwidth img");
     // Create a function to generate forty random countries from the list from the "js"-file
@@ -64,6 +68,8 @@
     }
     // Run the function to generate forty random countries from the list from the "js"-file
     getFortyCountries();
+    // Create a function to start the game
+    function startGame() {}
   </script>
 </body>
 </html>
