@@ -77,14 +77,14 @@
       timerNumber.innerText = `${timer}`;
       // Output the correct time
       console.log(timer);
-      // Create a for-loop to count down if the number is equal to or greater than zero
-      if (timer >= 0) {
+      // Create a for-loop to count down if the number is greater than zero
+      if (timer > 0) {
         // Reduce the number by one
         timer--;
         // Create a loop and run the function again in one second
         setTimeout(countDown, 1000);
       }
-      // When the timer is less than zero
+      // When the timer reaches zero
       else {
         // Stop the function here
         console.log("Time out!");
