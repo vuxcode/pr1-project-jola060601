@@ -41,6 +41,9 @@
 - 2026-04-20 14:00 Worked for 1.5 hour.
   - Created some code to randomly generate forty codes & countries from "countries.js" file.
 
+- 2026-04-23 11:45 Worked for 1.5 hour.
+  - Created functions to count down to zero and to extract four array items.
+
 > WE1
 
 - 2026-03-23 14:00 Worked for 1.5 hour.
