@@ -66,8 +66,8 @@
       }
       // Output the arrays on console log to confirm that the code works
       console.log(randomArray);
-      console.log(codeArray);
-      console.log(countryArray);
+      // console.log(codeArray);
+      // console.log(countryArray);
     }
     // Run the function to generate forty random countries from the list from the "js"-file
     getFortyCountries();
@@ -92,6 +92,16 @@
     }
     // Run the countdown function
     // countDown();
+    // Create a function to start the game
+    function startGame() {
+      // Create a for-loop to extract four items from randomArray
+      for (var n = 0; n < 4; n++) {
+        // Remove from randomArray and save in fourSelections
+        fourSelections = randomArray.pop();
+      }
+      // Output the array on the console
+      console.log(fourSelections);
+    }
   </script>
 </body>
 </html>
