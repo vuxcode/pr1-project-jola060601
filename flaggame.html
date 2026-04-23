@@ -40,6 +40,7 @@
     var codeArray = [];
     var countryArray = [];
     var fourSelections = [];
+    var fourCountries = [];
     var questionNumber = 1;
     var maxQuestions = 10;
     var correctPoints = 0;
@@ -98,9 +99,11 @@
       for (var n = 0; n < 4; n++) {
         // Remove from randomArray and save in fourSelections
         fourSelections.unshift(randomArray.pop());
+        fourCountries.unshift(fourSelections[n][1]);
       }
       // Output the array on the console
       console.log(fourSelections);
+      console.log(fourCountries);
     }
     // Run the startGame function
     startGame();
