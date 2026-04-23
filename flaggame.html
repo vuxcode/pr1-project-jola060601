@@ -97,7 +97,7 @@
       // Create a for-loop to extract four items from randomArray
       for (var n = 0; n < 4; n++) {
         // Remove from randomArray and save in fourSelections
-        fourSelections[n] = randomArray.pop();
+        fourSelections[n] = randomArray.pop([code, country]);
       }
       // Output the array on the console
       console.log(fourSelections);
