@@ -84,3 +84,6 @@
 - 2026-04-20 14:00 Worked for 1.5 hour.
   - Validated all existing pages & "style.css".
   - Created the beginnings of the "Flag Game" page.
+
+- 2026-04-23 11:45 Worked for 1.5 hour.
+  - The timer on screen will automatically count down now (but for now I have it deactivated).
