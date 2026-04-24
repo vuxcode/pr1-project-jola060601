@@ -63,7 +63,7 @@
         // Use Math.floor to round down so that the number in countryList.length won't be called upon and crash the game (index starts at 0 and ends in countryList.length - 1)
         var { code, country } = countryList[Math.floor(Math.random() * countryList.length)];
         // Create an if-statement to check if the country isn't already included 
-        if (!randomArray.includes([code, country])) {
+        if (!randomArray.includes(code)) {
           // Save the randomly generated code and country into the empty array
           randomArray.push([code, country]);
         }
