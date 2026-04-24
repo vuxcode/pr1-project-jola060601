@@ -101,6 +101,8 @@
     // countDown();
     // Create a function to start the game
     function startGame() {
+      // Have the four selections be empty when starting a new question
+      fourSelections = [];
       // Create a for-loop to extract four items from randomArray
       for (var n = 0; n < 4; n++) {
         // Remove from randomArray and save in fourSelections
@@ -130,6 +132,8 @@
       flagImage.src = `flags/${currentFlag[0]}.svg`;
       // Increase the question number when a button is clicked
       questionNumber++;
+      // If all ten questions are answered, put out a message on screen
+      console.log("Game over!");
     }
     // Run the startGame function
     startGame();
