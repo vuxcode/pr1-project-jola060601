@@ -58,8 +58,8 @@
     var button3 = document.getElementById("choice3");
     // Create a function to generate forty random countries from the list from the "js"-file
     function getFortyCountries() {
-      // Create a for-loop to generate forty random and unique countries
-      for (var i = 0; i < countryList.length; i++) {
+      // Create a while-loop to generate forty random and unique countries
+      while (randomArray.length < 40) {
         // Use Math.floor to round down so that the number in countryList.length won't be called upon and crash the game (index starts at 0 and ends in countryList.length - 1)
         var { code, country } = countryList[Math.floor(Math.random() * countryList.length)];
         // Check to see if code already exists inside randomArray (use .some() instead of .includes() because the former can check inside an array inside of another array)
@@ -73,10 +73,6 @@
         else {
           // Output a message
           console.log(code + " already exists.");
-        }
-        // Break the loop when forty unique items are inside randomArray
-        if (randomArray.length == 40) {
-          break;
         }
       }
       // Use nested loops to access each element
