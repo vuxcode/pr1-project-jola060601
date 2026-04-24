@@ -128,6 +128,8 @@
       pointsText.innerText = `${correctPoints} / ${maxPoints}`;
       // Choose a random flag from one of the four selections
       flagImage.src = `flags/${currentFlag[0]}.svg`;
+      // Increase the question number when a button is clicked
+      questionNumber++;
     }
     // Run the startGame function
     startGame();
