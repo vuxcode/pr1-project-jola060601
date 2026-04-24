@@ -87,3 +87,7 @@
 
 - 2026-04-23 11:45 Worked for 1.5 hour.
   - The timer on screen will automatically count down now (but for now I have it deactivated).
+
+- 2026-04-24 15:00 Worked for 2 hours.
+  - Linked flag image, question numbers and point numbers to js-code so that they will change when playing the game.
+  - Double-checked CSS so that the hangman game wasn't affected by code from flag game. 
