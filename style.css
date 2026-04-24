@@ -143,7 +143,7 @@ li.currentletter {
 #widenbox {
   max-width: 100%;
 }
-#widenbox button {
+#choice0, #choice1, #choice2, #choice3 {
   display: block;
   background: #009DC4;
   color: white;
