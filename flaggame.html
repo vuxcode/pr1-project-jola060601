@@ -24,10 +24,10 @@
     <div id="widenbox">
         <h1>Which country does this flag belong to?</h1>
         <h2 id="timernumber">Time remaining: <span>30</span>s</h2>
-        <button>Choice 1</button>
-        <button>Choice 2</button>
-        <button>Choice 3</button>
-        <button>Choice 4</button>
+        <button id="choice0">Choice 1</button>
+        <button id="choice1">Choice 2</button>
+        <button id="choice2">Choice 3</button>
+        <button id="choice3">Choice 4</button>
     </div>
   </main>
   <!-- Load the external "js"-file -->
@@ -103,15 +103,25 @@
       }
       // Output the array on the console
       console.log(fourSelections);
-      // Create a for-loop to extract the country codes and names from the new array
-      for (var d = 0; d < 4; d++) {
-        // Show the country codes and names in the new arrays without removing them from fourSelections
-        fourCodes.push(fourSelections[d][0]);
-        fourCountries.push(fourSelections[d][1]);
-      }
-      // Output the new arrays on the console
-      console.log(fourCodes);
-      console.log(fourCountries);
+      // Create four local variables to find the button elements
+      var button0 = document.getElementById("choice0");
+      var button1 = document.getElementById("choice1");
+      var button2 = document.getElementById("choice2");
+      var button3 = document.getElementById("choice3");
+      // Check to see that the computer can find the button elements
+      console.log(button0);
+      console.log(button1);
+      console.log(button2);
+      console.log(button3);
+      // // Create a for-loop to extract the country codes and names from the new array
+      // for (var d = 0; d < 4; d++) {
+      //   // Show the country codes and names in the new arrays without removing them from fourSelections
+      //   fourCodes.push(fourSelections[d][0]);
+      //   fourCountries.push(fourSelections[d][1]);
+      // }
+      // // Output the new arrays on the console
+      // console.log(fourCodes);
+      // console.log(fourCountries);
     }
     // Run the startGame function
     startGame();
