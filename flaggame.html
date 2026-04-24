@@ -67,8 +67,12 @@
           // Save the randomly generated code and country into the empty array
           randomArray.push([code, country]);
         }
+        else {
+          // Add a message
+          console.log([code, country] + "was already added.");
+        }
         // There should be forty unique countries in the array
-        if (randomArray.length == 40) {
+        if (randomArray.length == 100) {
           // Break out of the loop
           break;
         }
