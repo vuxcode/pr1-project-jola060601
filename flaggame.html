@@ -118,8 +118,12 @@
       button1.innerHTML = fourSelections[1][1];
       button2.innerHTML = fourSelections[2][1];
       button3.innerHTML = fourSelections[3][1];
+      // Let one of the four selections be the correct choice
+      currentFlag = fourSelections[Math.floor(Math.random() * fourSelections.length)];
+      // Check to see that one selection was made
+      console.log(currentFlag);
       // Choose a random flag from one of the four selections
-      flagImage.src = `flags/${fourSelections[Math.floor(Math.random() * fourSelections.length)][0]}.svg`;
+      flagImage.src = `flags/${currentFlag[0]}.svg`;
     }
     // Run the startGame function
     startGame();
