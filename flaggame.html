@@ -55,6 +55,11 @@
     var timerNumber = document.querySelector("#timernumber span");
     // Get the correct <img> where the flag is displayed (i.e. the <div> designated with the id="questiontext")
     var flagImage = document.querySelector("#stuckwidth img");
+    // Create four variables to find the button elements
+    var button0 = document.getElementById("choice0");
+    var button1 = document.getElementById("choice1");
+    var button2 = document.getElementById("choice2");
+    var button3 = document.getElementById("choice3");
     // Create a function to generate forty random countries from the list from the "js"-file
     function getFortyCountries() {
       // Create a for-loop to generate a random country forty times
@@ -103,16 +108,12 @@
       }
       // Output the array on the console
       console.log(fourSelections);
-      // Create four local variables to find the button elements
-      var button0 = document.getElementById("choice0");
-      var button1 = document.getElementById("choice1");
-      var button2 = document.getElementById("choice2");
-      var button3 = document.getElementById("choice3");
       // Check to see that the computer can find the button elements
       console.log(button0);
       console.log(button1);
       console.log(button2);
       console.log(button3);
+      // Replace text for 
       // // Create a for-loop to extract the country codes and names from the new array
       // for (var d = 0; d < 4; d++) {
       //   // Show the country codes and names in the new arrays without removing them from fourSelections
