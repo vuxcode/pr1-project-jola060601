@@ -133,7 +133,9 @@
       // Increase the question number when a button is clicked
       questionNumber++;
       // If all ten questions are answered, put out a message on screen
-      console.log("Game over!");
+      if (questionNumber > maxQuestions) {
+        console.log("Game over!");
+      }
     }
     // Run the startGame function
     startGame();
