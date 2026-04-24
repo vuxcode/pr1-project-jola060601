@@ -130,8 +130,10 @@
       pointsText.innerText = `${correctPoints} / ${maxPoints}`;
       // Choose a random flag from one of the four selections
       flagImage.src = `flags/${currentFlag[0]}.svg`;
-      // Increase the question number when a button is clicked
-      questionNumber++;
+      // Increase the question number when a button is clicked when the question number is less than or equal to the maximum question
+      if (questionNumber <= maxQuestions) {
+        questionNumber++;
+      }
       // If all ten questions are answered, put out a message on screen
       if (questionNumber > maxQuestions) {
         console.log("Game over!");
