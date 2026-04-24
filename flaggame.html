@@ -59,23 +59,23 @@
     // Create a function to generate forty random countries from the list from the "js"-file
     function getFortyCountries() {
       // Create a for-loop to generate forty random countries
-      for (var i = 0; i < countryList.length; i++) {
+      for (var i = 0; i < 40; i++) {
         // Use Math.floor to round down so that the number in countryList.length won't be called upon and crash the game (index starts at 0 and ends in countryList.length - 1)
         var { code, country } = countryList[Math.floor(Math.random() * countryList.length)];
-        // Create an if-statement to check if the country isn't already included 
-        if (!randomArray.includes(code)) {
-          // Save the randomly generated code and country into the empty array
-          randomArray.push([code, country]);
-        }
-        else {
-          // Add a message
-          console.log([code, country] + "was already added.");
-        }
-        // There should be forty unique countries in the array
-        if (randomArray.length == 100) {
-          // Break out of the loop
-          break;
-        }
+        // // Create an if-statement to check if the country isn't already included 
+        // if (!randomArray.includes(code)) {
+        //   // Save the randomly generated code and country into the empty array
+        //   randomArray.push([code, country]);
+        // }
+        // else {
+        //   // Add a message
+        //   console.log([code, country] + "was already added.");
+        // }
+        // // There should be forty unique countries in the array
+        // if (randomArray.length == 100) {
+        //   // Break out of the loop
+        //   break;
+        // }
       }
       // Output the arrays on console log to confirm that the code works
       console.log(randomArray);
