@@ -44,6 +44,10 @@
 - 2026-04-23 11:45 Worked for 1.5 hour.
   - Created functions to count down to zero and to extract four array items.
 
+- 2026-04-24 15:00 Worked for 2 hours.
+  - The game will now generate forty unique countries when starting the game.
+  - The game mostly works now, i.e. four new countries show up per question.
+
 > WE1
 
 - 2026-03-23 14:00 Worked for 1.5 hour.
