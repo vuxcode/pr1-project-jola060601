@@ -152,3 +152,6 @@ li.currentletter {
   width: 350px;
   margin: 10px;
 }
+#flagborder {
+  border: 1px black solid;
+}
