@@ -107,6 +107,17 @@
     }
     // Run the countdown function
     // countDown();
+    // Create a function to increase the question number each time one button is clicked
+    function clickButtonQuestion() {
+      // Increase the question number when a button is clicked when the question number is less than or equal to the maximum question
+      if (questionNumber <= maxQuestions) {
+        questionNumber++;
+      }
+      // If all ten questions are answered, put out a message on screen
+      if (questionNumber > maxQuestions) {
+        console.log("Game over!");
+      }
+    }
     // Create a function to start the game
     function startGame() {
       // Have the four selections be empty when starting a new question
@@ -123,6 +134,11 @@
       // console.log(button1);
       // console.log(button2);
       // console.log(button3);
+      // Add event listeners to all four buttons
+      button0.addEventListener("click", clickButtonQuestion);
+      button1.addEventListener("click", clickButtonQuestion);
+      button2.addEventListener("click", clickButtonQuestion);
+      button3.addEventListener("click", clickButtonQuestion);
       // Add country names to the buttons
       button0.innerHTML = fourSelections[0][1];
       button1.innerHTML = fourSelections[1][1];
@@ -138,14 +154,6 @@
       pointsText.innerText = `${correctPoints} / ${maxPoints}`;
       // Choose a random flag from one of the four selections
       flagImage.src = `flags/${currentFlag[0]}.svg`;
-      // Increase the question number when a button is clicked when the question number is less than or equal to the maximum question
-      if (questionNumber <= maxQuestions) {
-        questionNumber++;
-      }
-      // If all ten questions are answered, put out a message on screen
-      if (questionNumber > maxQuestions) {
-        console.log("Game over!");
-      }
     }
     // Run the startGame function
     startGame();
