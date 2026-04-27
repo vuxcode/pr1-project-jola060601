@@ -24,10 +24,10 @@
     <div id="widenbox">
         <h1>Which country does this flag belong to?</h1>
         <h2 id="timernumber">Time remaining: <span>30</span>s</h2>
-        <button onclick="clickButtonQuestion()" id="choice0"></button>
-        <button onclick="clickButtonQuestion()" id="choice1"></button>
-        <button onclick="clickButtonQuestion()" id="choice2"></button>
-        <button onclick="clickButtonQuestion()" id="choice3"></button>
+        <button onclick="clickButtonQuestion(this)" id="choice0"></button>
+        <button onclick="clickButtonQuestion(this)" id="choice1"></button>
+        <button onclick="clickButtonQuestion(this)" id="choice2"></button>
+        <button onclick="clickButtonQuestion(this)" id="choice3"></button>
     </div>
   </main>
   <!-- Load the external "js"-file -->
@@ -108,8 +108,8 @@
     // Run the countdown function
     // countDown();
     // Create a function to increase the question number each time one button is clicked
-    function clickButtonQuestion() {
-      console.log(questionNumber + " for clickButtonQuestion function.")
+    function clickButtonQuestion(clickedButton) {
+      console.log(clickedButton);
       // Increase the question number when a button is clicked when the question number is less than or equal to the maximum question
       if (questionNumber < maxQuestions) {
         questionNumber++;
@@ -121,9 +121,15 @@
         console.log("Game over!");
       }
     }
+    // Create a function to increase points when clicking the correct button
+    // function clickButtonPoints() {
+    //   // Create an if-statement to increase the points by one step if the correct button was pressed
+    //   if () {
+    //     correctPoints++;
+    //   }
+    // }
     // Create a function to start the game
     function startGame() {
-      console.log(questionNumber + " for startGame function.")
       // Have the four selections be empty when starting a new question
       fourSelections = [];
       // Create a for-loop to extract four items from randomArray
