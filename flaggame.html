@@ -109,6 +109,7 @@
     // countDown();
     // Create a function to increase the question number each time one button is clicked
     function clickButtonQuestion() {
+      console.log(questionNumber + " for clickButtonQuestion function.")
       // Increase the question number when a button is clicked when the question number is less than or equal to the maximum question
       if (questionNumber <= maxQuestions) {
         questionNumber++;
@@ -120,6 +121,7 @@
     }
     // Create a function to start the game
     function startGame() {
+      console.log(questionNumber + " for startGame function.")
       // Have the four selections be empty when starting a new question
       fourSelections = [];
       // Create a for-loop to extract four items from randomArray
