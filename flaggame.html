@@ -171,6 +171,10 @@
       // console.log(button1);
       // console.log(button2);
       // console.log(button3);
+      // Reset the colors of the buttons
+      [button0, button1, button2, button3].forEach(btn => {
+        btn.style.backgroundColor = "";
+      });
       // Add country names to the buttons
       button0.innerHTML = fourSelections[0][1];
       button1.innerHTML = fourSelections[1][1];
