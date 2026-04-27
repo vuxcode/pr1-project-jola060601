@@ -48,6 +48,12 @@
   - The game will now generate forty unique countries when starting the game.
   - The game mostly works now, i.e. four new countries show up per question.
 
+- 2026-04-27 15:00 Worked for 2.5 hours
+  - The game works now.
+      - Ten questions are loaded when running the game.
+      - The points are added on when answering correctly. 
+      - The timer runs as intended.
+
 > WE1
 
 - 2026-03-23 14:00 Worked for 1.5 hour.
