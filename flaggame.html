@@ -111,16 +111,30 @@
     function clickButtonQuestion(clickedButton) {
       // Run the point increase function
       clickButtonPoints(clickedButton);
-      // Increase the question number when a button is clicked when the question number is less than or equal to the maximum question
-      if (questionNumber < maxQuestions) {
-        questionNumber++;
-        // Run the startGame function
-        startGame();
-      }
-      // If all ten questions are answered, put out a message on screen
-      else {
-        console.log("Game over!");
-      }
+      // Deactivate all buttons after clicking on one of them
+      button0.disabled = true;
+      button1.disabled = true;
+      button2.disabled = true;
+      button3.disabled = true;
+      // Set a timeout that will wait one second before moving on to the next question
+      setTimeout(function() {
+        // Activate the buttons again for the next question
+        button0.disabled = false;
+        button1.disabled = false;
+        button2.disabled = false;
+        button3.disabled = false;
+        // Increase the question number when a button is clicked when the question number is less than or equal to the maximum question
+        if (questionNumber < maxQuestions) {
+          questionNumber++;
+          // Run the startGame function
+          startGame();
+        }
+        // If all ten questions are answered, put out a message on screen
+        else {
+          console.log("Game over!");
+        }
+      }, 1000)
+      
     }
     // Create a function to increase points when clicking the correct button
     function clickButtonPoints(clickedButton) {
