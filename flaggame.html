@@ -43,6 +43,7 @@
     var correctPoints = 0;
     var maxPoints = 10;
     var timer = 30;
+    var timerID; // This variable will be necessary when stopping the timer after a button has been pushed
     // Get the correct <h2> where the question numbers are displayed (i.e. the <h2> designated with the id="questiontext")
     var questionText = document.querySelector("#questiontext span");
     // Get the correct <h2> where the point numbers are displayed (i.e. the <h2> designated with the id="pointstext")
@@ -85,24 +86,26 @@
       // Print out the correct number on screen
       timerNumber.innerText = `${timer}`;
       // Output the correct time
-      console.log(timer);
+      // console.log(timer);
       // Create a for-loop to count down if the number is greater than zero
       if (timer > 0) {
         // Reduce the number by one
         timer--;
-        // Create a loop and run the function again in one second
-        setTimeout(countDown, 1000);
+        // Create a loop and run the function again in one second, while saving the timer in the timerID variable so that it can be stopped later on
+        timerID = setTimeout(countDown, 1000);
       }
       // When the timer reaches zero
       else {
         // Stop the function here
-        console.log("Time out!");
+        // console.log("Time out!");
+        // Move on to the next question automatically
+        clickButtonQuestion(null);
       }
     }
-    // Run the countdown function
-    // countDown();
     // Create a function to increase the question number each time one button is clicked
     function clickButtonQuestion(clickedButton) {
+      // Stop the timer when a button has been pushed
+      clearTimeout(timerID);
       // Run the point increase function
       clickButtonPoints(clickedButton);
       // Deactivate all buttons after clicking on one of them
@@ -128,7 +131,6 @@
           console.log("Game over!");
         }
       }, 1000)
-      
     }
     // Create a function to increase points when clicking the correct button
     function clickButtonPoints(clickedButton) {
@@ -158,6 +160,8 @@
     function startGame() {
       // Have the four selections be empty when starting a new question
       fourSelections = [];
+      // Reset timer to be 30 seconds
+      timer = 30;
       // Create a for-loop to extract four items from randomArray
       for (var n = 0; n < 4; n++) {
         // Remove from randomArray and save in fourSelections
@@ -187,6 +191,8 @@
       questionText.innerText = `${questionNumber} / ${maxQuestions}`;
       // Choose a random flag from one of the four selections
       flagImage.src = `flags/${currentFlag[0]}.svg`;
+      // Run the countdown function
+      countDown();
     }
     // Run the startGame function
     startGame();
