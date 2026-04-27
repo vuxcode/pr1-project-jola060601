@@ -24,10 +24,10 @@
     <div id="widenbox">
         <h1>Which country does this flag belong to?</h1>
         <h2 id="timernumber">Time remaining: <span>30</span>s</h2>
-        <button onclick="startGame()" id="choice0"></button>
-        <button onclick="startGame()" id="choice1"></button>
-        <button onclick="startGame()" id="choice2"></button>
-        <button onclick="startGame()" id="choice3"></button>
+        <button onclick="clickButtonQuestion()" id="choice0"></button>
+        <button onclick="clickButtonQuestion()" id="choice1"></button>
+        <button onclick="clickButtonQuestion()" id="choice2"></button>
+        <button onclick="clickButtonQuestion()" id="choice3"></button>
     </div>
   </main>
   <!-- Load the external "js"-file -->
@@ -118,6 +118,8 @@
       if (questionNumber > maxQuestions) {
         console.log("Game over!");
       }
+      // Run the startGame function
+      startGame();
     }
     // Create a function to start the game
     function startGame() {
@@ -136,11 +138,6 @@
       // console.log(button1);
       // console.log(button2);
       // console.log(button3);
-      // Add event listeners to all four buttons
-      button0.addEventListener("click", clickButtonQuestion);
-      button1.addEventListener("click", clickButtonQuestion);
-      button2.addEventListener("click", clickButtonQuestion);
-      button3.addEventListener("click", clickButtonQuestion);
       // Add country names to the buttons
       button0.innerHTML = fourSelections[0][1];
       button1.innerHTML = fourSelections[1][1];
