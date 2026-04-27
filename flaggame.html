@@ -116,8 +116,12 @@
         // Run the startGame function
         startGame();
       }
+      // Increase the question number one final time
+      else if (questionNumber == maxQuestions) {
+        questionNumber++;
+      }
       // If all ten questions are answered, put out a message on screen
-      if (questionNumber >= maxQuestions) {
+      else {
         console.log("Game over!");
       }
     }
