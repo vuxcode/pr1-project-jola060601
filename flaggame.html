@@ -127,6 +127,8 @@
       // Create an if-statement to increase the points by one step if the correct button was pressed
       if (clickedButton.innerHTML == currentFlag[1]) {
         correctPoints++;
+        // Print out the point numbers on screen
+        pointsText.innerText = `${correctPoints} / ${maxPoints}`;
       }
     }
     // Create a function to start the game
@@ -156,8 +158,6 @@
       console.log(currentFlag);
       // Print out the question numbers on screen
       questionText.innerText = `${questionNumber} / ${maxQuestions}`;
-      // Print out the point numbers on screen
-      pointsText.innerText = `${correctPoints} / ${maxPoints}`;
       // Choose a random flag from one of the four selections
       flagImage.src = `flags/${currentFlag[0]}.svg`;
     }
