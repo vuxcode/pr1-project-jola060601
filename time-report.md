@@ -48,7 +48,7 @@
   - The game will now generate forty unique countries when starting the game.
   - The game mostly works now, i.e. four new countries show up per question.
 
-- 2026-04-27 15:00 Worked for 2.5 hours
+- 2026-04-27 15:00 Worked for 2.5 hours.
   - The game works now.
       - Ten questions are loaded when running the game.
       - The points are added on when answering correctly. 
@@ -101,3 +101,7 @@
 - 2026-04-24 15:00 Worked for 2.5 hours.
   - Linked flag image, question numbers and point numbers to js-code so that they will change when playing the game.
   - Double-checked CSS so that the hangman game wasn't affected by code from flag game.
+
+- 2026-04-27 15:00 Worked for 2.5 hours.
+  - The buttons are colored green (when answering correctly) and red (when answering incorrectly) when clicked.
+  - The question and point numbers on screen are loading and updating as intended.
