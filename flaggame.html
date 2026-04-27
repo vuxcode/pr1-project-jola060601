@@ -124,8 +124,9 @@
     }
     // Create a function to increase points when clicking the correct button
     function clickButtonPoints(clickedButton) {
+      console.log(clickedButton.innerHTML);
       // Create an if-statement to increase the points by one step if the correct button was pressed
-      if (clickedButton[6] == currentFlag) {
+      if (clickedButton == currentFlag) {
         correctPoints++;
       }
     }
