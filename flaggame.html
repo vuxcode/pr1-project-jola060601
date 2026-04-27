@@ -43,7 +43,7 @@
     var correctPoints = 0;
     var maxPoints = 10;
     var timer = 30;
-    var allButtons = [button0, button1, button2, button3];
+    
     // Get the correct <h2> where the question numbers are displayed (i.e. the <h2> designated with the id="questiontext")
     var questionText = document.querySelector("#questiontext span");
     // Get the correct <h2> where the point numbers are displayed (i.e. the <h2> designated with the id="pointstext")
@@ -133,6 +133,8 @@
     }
     // Create a function to increase points when clicking the correct button
     function clickButtonPoints(clickedButton) {
+      // Create a local variable to put all buttons inside an array
+      var allButtons = [button0, button1, button2, button3];
       // Create an if-statement to increase the points by one step if the correct button was pressed
       if (clickedButton.innerHTML == currentFlag[1]) {
         correctPoints++;
@@ -155,10 +157,6 @@
     }
     // Create a function to start the game
     function startGame() {
-      // Reset the colors of the buttons to the CSS standard
-      // allButtons.forEach(btn => {
-      //   btn.style.backgroundColor = "";
-      // });
       // Have the four selections be empty when starting a new question
       fourSelections = [];
       // Create a for-loop to extract four items from randomArray
