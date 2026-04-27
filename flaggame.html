@@ -109,7 +109,6 @@
     // countDown();
     // Create a function to increase the question number each time one button is clicked
     function clickButtonQuestion(clickedButton) {
-      console.dir(clickedButton);
       // Increase the question number when a button is clicked when the question number is less than or equal to the maximum question
       if (questionNumber < maxQuestions) {
         questionNumber++;
@@ -126,7 +125,7 @@
     // Create a function to increase points when clicking the correct button
     function clickButtonPoints(clickedButton) {
       // Create an if-statement to increase the points by one step if the correct button was pressed
-      if (clickedButton.id == currentFlag) {
+      if (clickedButton == currentFlag) {
         correctPoints++;
       }
     }
