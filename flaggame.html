@@ -43,6 +43,7 @@
     var correctPoints = 0;
     var maxPoints = 10;
     var timer = 30;
+    var allButtons = [button0, button1, button2, button3];
     // Get the correct <h2> where the question numbers are displayed (i.e. the <h2> designated with the id="questiontext")
     var questionText = document.querySelector("#questiontext span");
     // Get the correct <h2> where the point numbers are displayed (i.e. the <h2> designated with the id="pointstext")
@@ -75,12 +76,6 @@
           // console.log(code + " already exists.");
         }
       }
-      // Use nested loops to access each element
-      // for (let r = 0; r < randomArray.length; r++) {
-      //   for (let c = 0; c < randomArray[r].length; c++) {
-      //     console.log(randomArray[r][c]);
-      //   }
-      // }
       // Output the arrays on console log to confirm that the code works
       console.log(randomArray);
     }
@@ -143,10 +138,27 @@
         correctPoints++;
         // Print out the point numbers on screen
         pointsText.innerText = `${correctPoints} / ${maxPoints}`;
+        // Color the correct button green
+        clickedButton.style.backgroundColor = "green"
+      }
+      else {
+        // Color the incorrect button red
+        clickedButton.style.backgroundColor = "red"
+        // Loop through all buttons to find the correct one
+        for (var i = 0; i < allButtons.length; i++) {
+          // Color the correct button green
+          if (allButtons[i].innerHTML == currentFlag[1]) {
+            allButtons[i].style.backgroundColor = "green";
+          }
+        }
       }
     }
     // Create a function to start the game
     function startGame() {
+      // Reset the colors of the buttons to the CSS standard
+      allButtons.forEach(btn => {
+        btn.style.backgroundColor = "";
+      });
       // Have the four selections be empty when starting a new question
       fourSelections = [];
       // Create a for-loop to extract four items from randomArray
