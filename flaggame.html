@@ -99,7 +99,9 @@
         // Stop the function here
         // console.log("Time out!");
         // Move on to the next question automatically
-        clickButtonQuestion(clickedButton);
+        startGame();
+        // Increase the question number when loading a new question
+        questionNumber++;
       }
     }
     // Create a function to increase the question number each time one button is clicked
