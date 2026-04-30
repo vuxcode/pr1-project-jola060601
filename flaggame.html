@@ -52,6 +52,10 @@
     var timerNumber = document.querySelector("#timernumber span");
     // Get the correct <img> where the flag is displayed (i.e. the <div> designated with the id="questiontext")
     var flagImage = document.querySelector("#stuckwidth img");
+    // Get the correct <div> where the game modal is displayed
+    var flagModal = document.querySelector(".game-modal");
+    // Get the correct <main> where the container box is displayed
+    var flagContainer = document.querySelector(".containerbox");
     // Create four variables to find the button elements on the screen
     var button0 = document.getElementById("choice0");
     var button1 = document.getElementById("choice1");
@@ -81,6 +85,21 @@
     }
     // Run the function to generate forty random countries from the list from the "js"-file
     getFortyCountries();
+    // Create a function to reset the game
+    function resetGame() {
+      // Clear all variables every time the game restarts
+      currentFlag = "";
+      fourSelections = [];
+      questionNumber = 1;
+      correctPoints = 0;
+      timer = 30;
+      timerID;
+      // Clear all UI elements (i.e. text, images, keyboard and modal) every time the game restarts
+      questionText.innerText = `${questionNumber} / ${maxQuestions}`; // Print out the question numbers on screen
+      flagImage.src = `flags/${currentFlag[0]}.svg`; // Choose a random flag from one of the four selections
+      flagContainer.classList.remove("hide");
+      flagModal.classList.remove("show");
+    }
     // Create a function to load the next question depending on number of questions
     function loadNextQuestion() {
       // Increase the question number when a button is clicked when the question number is less than or equal to the maximum question
