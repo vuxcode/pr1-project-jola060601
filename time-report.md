@@ -108,3 +108,6 @@
 - 2026-04-27 15:00 Worked for 2.5 hours.
   - The buttons are colored green (when answering correctly) and red (when answering incorrectly) when clicked.
   - The question and point numbers on screen are loading and updating as intended.
+
+- 2026-04-30 12:00 Worked for 1.45 hour.
+  - Added game modal for beginning and end of flag game.
