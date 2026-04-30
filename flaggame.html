@@ -14,7 +14,15 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <main class="containerbox">
+  <div class="game-modal show">
+    <div id="flag-game-modal">
+      <h2>Welcome!</h2>
+      <p>Can you guess 10 flags correctly before the game is concluded? Let's find out!</p>
+      <button onclick="resetGame()">Play</button>
+      <button onclick="window.location.href='games.html'">Return</button>
+    </div>
+  </div>
+  <main class="containerbox hide">
     <div id="stuckwidth">
       <img src="flags/ad.svg" id="flagborder" alt="Picture of a country's flag">
       <h1>Flag Game</h1>
