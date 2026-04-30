@@ -91,8 +91,6 @@
       // Output the arrays on console log to confirm that the code works
       console.log(randomArray);
     }
-    // Run the function to generate forty random countries from the list from the "js"-file
-    getFortyCountries();
     // Create a function to reset the game
     function resetGame() {
       // Clear all variables every time the game restarts
@@ -104,6 +102,10 @@
       questionText.innerText = `${questionNumber} / ${maxQuestions}`; // Print out the question numbers on screen
       flagContainer.classList.remove("hide");
       flagModal.classList.remove("show");
+      // Run the function to generate forty random countries from the list from the "js"-file
+      getFortyCountries();
+      // Run the startGame function
+      startGame();
     }
     // Create a function to load the next question depending on number of questions
     function loadNextQuestion() {
@@ -248,8 +250,6 @@
       // Run the countdown function
       countDown();
     }
-    // Run the startGame function
-    startGame();
   </script>
 </body>
 </html>
