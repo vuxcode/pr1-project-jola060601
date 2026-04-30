@@ -104,7 +104,6 @@
       timerID;
       // Clear all UI elements (i.e. text, images, keyboard and modal) every time the game restarts
       questionText.innerText = `${questionNumber} / ${maxQuestions}`; // Print out the question numbers on screen
-      flagImage.src = `flags/${currentFlag[0]}.svg`; // Choose a random flag from one of the four selections
       flagContainer.classList.remove("hide");
       flagModal.classList.remove("show");
     }
