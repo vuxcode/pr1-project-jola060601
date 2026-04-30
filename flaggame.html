@@ -187,6 +187,30 @@
         }
       }
     }
+    // Create a function to end the game
+    function endGame() {
+      // Turn the game modal on
+      flagModal.classList.add("show");
+      // Create an if-statement to process the result of the game
+      if (correctPoints == 0) {
+        // Change the text displayed on the game modal
+        flagModal.querySelector("h2").innerText = `${"Game Over!"}`;
+        flagModal.querySelector("button").innerText = `${"Play again"}`
+        flagModal.querySelector("p").innerHTML = `${`You answered all ${questionNumber} questions, but you earned ${correctPoints} points in total.`}`;
+      }
+      else if (correctPoints == maxPoints) {
+        // Change the text displayed on the game modal
+        flagModal.querySelector("h2").innerText = `${"Congratulations!"}`;
+        flagModal.querySelector("button").innerText = `${"Play again"}`
+        flagModal.querySelector("p").innerHTML = `${`You answered all ${questionNumber} questions, and you earned all ${correctPoints} points in total.`}`;
+      }
+      else {
+        // Change the text displayed on the game modal
+        flagModal.querySelector("h2").innerText = `${"Finish!"}`;
+        flagModal.querySelector("button").innerText = `${"Play again"}`
+        flagModal.querySelector("p").innerHTML = `${`You answered all ${questionNumber} questions, and you earned ${correctPoints} points in total.`}`;
+      }
+    }
     // Create a function to start the game
     function startGame() {
       // Have the four selections be empty when starting a new question
