@@ -76,7 +76,7 @@ ul {
   opacity: 1;
   pointer-events: auto; /* The mouse pointer will target the game modal */
 }
-.game-modal #hangman-game-modal {
+.game-modal #hangman-game-modal, #flag-game-modal {
   background: white;
   border-radius: 15px;
   margin: 10px auto;
@@ -87,13 +87,13 @@ ul {
   align-content: center;
   overflow: auto;
 }
-.game-modal #hangman-game-modal h2 {
+.game-modal #hangman-game-modal h2, #flag-game-modal h2 {
   padding: 5px 0;
 }
-.game-modal #hangman-game-modal p {
+.game-modal #hangman-game-modal p, #flag-game-modal p {
   padding-bottom: 10px;
 }
-.game-modal #hangman-game-modal button {
+.game-modal #hangman-game-modal button, #flag-game-modal button {
   margin-bottom: 5px;
   padding: 3px;
 }
