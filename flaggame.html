@@ -81,6 +81,19 @@
     }
     // Run the function to generate forty random countries from the list from the "js"-file
     getFortyCountries();
+    // Create a function to load the next question depending on number of questions
+    function loadNextQuestion() {
+      // Increase the question number when a button is clicked when the question number is less than or equal to the maximum question
+      if (questionNumber < maxQuestions) {
+        questionNumber++;
+        // Run the startGame function
+        startGame();
+      }
+      // If all ten questions are answered, put out a message on screen
+      else {
+        console.log("Game over!");
+      }
+    }
     // Create a function to have the timer count down
     function countDown() {
       // Print out the correct number on screen
@@ -101,7 +114,7 @@
         // Increase the question number when loading a new question
         questionNumber++;
         // Move on to the next question automatically
-        startGame();
+        loadNextQuestion();
       }
     }
     // Create a function to increase the question number each time one button is clicked
@@ -122,16 +135,8 @@
         button1.disabled = false;
         button2.disabled = false;
         button3.disabled = false;
-        // Increase the question number when a button is clicked when the question number is less than or equal to the maximum question
-        if (questionNumber < maxQuestions) {
-          questionNumber++;
-          // Run the startGame function
-          startGame();
-        }
-        // If all ten questions are answered, put out a message on screen
-        else {
-          console.log("Game over!");
-        }
+        // Run the function to load the next question depending on the number of questions remaining
+        loadNextQuestion();
       }, 1000)
     }
     // Create a function to increase points when clicking the correct button
