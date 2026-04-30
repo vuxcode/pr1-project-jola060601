@@ -36,6 +36,7 @@
         <button onclick="clickButtonQuestion(this)" id="choice1"></button>
         <button onclick="clickButtonQuestion(this)" id="choice2"></button>
         <button onclick="clickButtonQuestion(this)" id="choice3"></button>
+        <button onclick="cancelGame()" id="cancelbutton">Cancel</button>
     </div>
   </main>
   <!-- Load the external "js"-file -->
@@ -64,11 +65,12 @@
     var flagModal = document.querySelector(".game-modal");
     // Get the correct <main> where the container box is displayed
     var flagContainer = document.querySelector(".containerbox");
-    // Create four variables to find the button elements on the screen
+    // Create variables to find the button elements on the screen
     var button0 = document.getElementById("choice0");
     var button1 = document.getElementById("choice1");
     var button2 = document.getElementById("choice2");
     var button3 = document.getElementById("choice3");
+    var cancelButton = document.getElementById("cancelbutton");
     // Create a function to generate forty random countries from the list from the "js"-file
     function getFortyCountries() {
       // Create a while-loop to generate forty random and unique countries
@@ -153,6 +155,7 @@
       button1.disabled = true;
       button2.disabled = true;
       button3.disabled = true;
+      cancelButton.disabled = true;
       // Set a timeout that will wait one second before moving on to the next question
       setTimeout(function() {
         // Activate the buttons again for the next question
@@ -160,6 +163,7 @@
         button1.disabled = false;
         button2.disabled = false;
         button3.disabled = false;
+        cancelButton.disabled = false;
         // Run the function to load the next question depending on the number of questions remaining
         loadNextQuestion();
       }, 1000)
@@ -187,6 +191,17 @@
           }
         }
       }
+    }
+    // Create a function to cancel the game
+    function cancelGame(clickedButton) {
+      // Stop the timer when a button has been pushed
+      clearTimeout(timerID);
+      // Turn the game modal on
+      flagModal.classList.add("show");
+      // Change the text displayed on the game modal
+      flagModal.querySelector("h2").innerText = `${"Game Over!"}`;
+      flagModal.querySelector("button").innerText = `${"Play again"}`
+      flagModal.querySelector("p").innerHTML = `${`You cancelled the game before finishing it! You answered ${questionNumber} questions while earning ${correctPoints} points in total.`}`;
     }
     // Create a function to end the game
     function endGame() {
