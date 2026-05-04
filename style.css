@@ -159,8 +159,6 @@ li.currentletter {
   background: red;
   color: white;
   cursor: pointer;
-  height: 15px;
-  width: 15px;
   padding: 5px;
   margin: 5px;
 }
