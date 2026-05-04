@@ -111,3 +111,7 @@
 
 - 2026-04-30 12:00 Worked for 1.45 hour.
   - Added game modal for beginning and end of flag game.
+
+- 2026-05-04 14:30 Worked for 2 hours.
+  - Finished the flag game.
+  - Added a font icon to all webpages.
