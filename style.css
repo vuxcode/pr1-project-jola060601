@@ -155,3 +155,12 @@ li.currentletter {
 #flagborder {
   border: 1px black solid;
 }
+#cancelbutton {
+  background: red;
+  color: white;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  padding: 5px;
+  margin: 5px;
+}
