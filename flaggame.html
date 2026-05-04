@@ -102,6 +102,7 @@
       timerID;
       // Clear all UI elements (i.e. text, images, keyboard and modal) every time the game restarts
       questionText.innerText = `${questionNumber} / ${maxQuestions}`; // Print out the question numbers on screen
+      pointsText.innerText = `${correctPoints} / ${maxPoints}`; // Print out the point numbers on screen
       flagContainer.classList.remove("hide");
       flagModal.classList.remove("show");
       // Run the function to generate forty random countries from the list from the "js"-file
