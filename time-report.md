@@ -57,6 +57,11 @@
 - 2026-04-30 12:00 Worked for 1.45 hour.
   - The flag game is almost finished now.
 
+- 2026-05-04 14:30 Worked for 2 hours.
+  - The flag game is fully finished now.
+  - Created a "flaggame.js" file to house script from "flaggame.html" to not make it too bloated.
+  - Created a "capitalcities.js" file from "countries.js" file.
+
 > WE1
 
 - 2026-03-23 14:00 Worked for 1.5 hour.
