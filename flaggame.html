@@ -202,7 +202,7 @@
       // Change the text displayed on the game modal
       flagModal.querySelector("h2").innerText = `${"Game Over!"}`;
       flagModal.querySelector("button").innerText = `${"Play again"}`
-      flagModal.querySelector("p").innerHTML = `${`You cancelled the game before finishing it! You answered ${questionNumber} questions while earning ${correctPoints} points in total.`}`;
+      flagModal.querySelector("p").innerHTML = `${`You cancelled the game before finishing it! You answered ${questionNumber - 1} questions while earning ${correctPoints} points in total.`}`;
     }
     // Create a function to end the game
     function endGame() {
