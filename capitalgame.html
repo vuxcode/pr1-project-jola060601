@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Setting the character encoding to be the standard that supports accents -->
+  <title>Capital Game</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="font-awesome-solid.svg">
+</head>
+<body>
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="game-modal show">
+    <div id="capital-game-modal">
+      <h2>Welcome!</h2>
+      <p>Can you guess the capitals of 10 countries correctly before the game is concluded? Let's find out!</p>
+      <button onclick="resetGame()">Play</button>
+      <button onclick="window.location.href='games.html'">Return</button>
+    </div>
+  </div>
+  <main class="containerbox hide">
+    <div id="stuckwidth">
+      <img src="font-awesome-solid" id="flagborder" alt="Picture of a Fort Awesome solidly-colored flag">
+      <h1>Capital Game</h1>
+      <h2 id="questiontext">Question: <span>1 / 10</span></h2>
+      <h2 id="pointstext">Points: <span>0 / 10</span></h2>
+    </div>
+    <div id="widenbox">
+        <h1></h1>
+        <h2 id="timernumber">Time remaining: <span>30</span>s</h2>
+        <button onclick="clickButtonQuestion(this)" id="choice0"></button>
+        <button onclick="clickButtonQuestion(this)" id="choice1"></button>
+        <button onclick="clickButtonQuestion(this)" id="choice2"></button>
+        <button onclick="clickButtonQuestion(this)" id="choice3"></button>
+        <button onclick="cancelGame()" id="cancelbutton">Cancel</button>
+    </div>
+  </main>
+  <!-- Load the external "js"-file -->
+  <script src="capitalcities.js"></script>
+  <!-- Load the flag game -->
+  <script></script>
+</body>
+</html>
