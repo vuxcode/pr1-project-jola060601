@@ -30,8 +30,8 @@ var cancelButton = document.getElementById("cancelbutton");
 function getFortyCapitals() {
   // Create a while-loop to generate forty random and unique countries
   while (randomArray.length < 40) {
-    // Use Math.floor to round down so that the number in countryList.length won't be called upon and crash the game (index starts at 0 and ends in countryList.length - 1)
-    var { country, capital } = capitalList[Math.floor(Math.random() * countryList.length)];
+    // Use Math.floor to round down so that the number in capitalList.length won't be called upon and crash the game (index starts at 0 and ends in capitalList.length - 1)
+    var { country, capital } = capitalList[Math.floor(Math.random() * capitalList.length)];
     // Check to see if country already exists inside randomArray (use .some() instead of .includes() because the former can check inside an array inside of another array)
     var isDuplicate = randomArray.some(item => item[0] == country);
     // Create an if-statement to check whether isDuplicate is true or false
