@@ -234,6 +234,6 @@ function startGame() {
   }
   else {
     // Display the following question
-    // capitalQuestion.querySelector("h1").innerHTML = `${`What is the capital city of ${currentCapital[0]}?`}`;
+    capitalQuestion.querySelector("h1").innerHTML = `${`What is the capital city of ${currentCapital[0]}?`}`;
   }
 }
