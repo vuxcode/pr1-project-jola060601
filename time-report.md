@@ -124,3 +124,6 @@
 - 2026-05-04 14:30 Worked for 2 hours.
   - Finished the flag game.
   - Added a font icon to all webpages.
+
+- 2026-05-05: 11:45 Worked for 1.5 hour.
+  - Created the beginnings of the "Capital Game" page.
