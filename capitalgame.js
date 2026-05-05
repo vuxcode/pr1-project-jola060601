@@ -19,7 +19,7 @@ var capitalModal = document.querySelector(".game-modal");
 // Get the correct <main> where the container box is displayed
 var capitalContainer = document.querySelector(".containerbox");
 // Get the correct <h1> where the question is displayed
-var capitalQuestion = document.querySelector("#capital-question");
+var capitalQuestion = document.querySelector("#widenbox");
 // Create variables to find the button elements on the screen
 var button0 = document.getElementById("choice0");
 var button1 = document.getElementById("choice1");
