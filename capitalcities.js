@@ -544,6 +544,10 @@ var capitalList = [
     capital: "Amsterdam"
   },
   {
+    country: "Netherlands",
+    capital: "The Hague"
+  },
+  {
     country: "Norway",
     capital: "Oslo"
   },
