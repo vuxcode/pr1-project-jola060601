@@ -42,11 +42,11 @@ function getFortyCapitals() {
     // Otherwise don't add it to the array
     else {
       // Output a message
-      console.log(country + " already exists.");
+      // console.log(country + " already exists.");
     }
   }
   // Output the arrays on console log to confirm that the code works
-  console.log(randomArray);
+  // console.log(randomArray);
 }
 // Create a function to reset the game
 function resetGame() {
@@ -196,7 +196,7 @@ function startGame() {
     fourSelections.unshift(randomArray.pop());
   }
   // Output the array on the console
-  console.log(fourSelections);
+  // console.log(fourSelections);
   // Check to see that the computer can find the button elements
   // console.log(button0);
   // console.log(button1);
@@ -214,7 +214,7 @@ function startGame() {
   // Let one of the four selections be the correct choice
   currentCapital = fourSelections[Math.floor(Math.random() * 4)];
   // Check to see that one selection was made
-  console.log(currentCapital);
+  // console.log(currentCapital);
   // Print out the question numbers on screen
   questionText.innerText = `${questionNumber} / ${maxQuestions}`;
   // Run the countdown function
