@@ -217,6 +217,8 @@ function startGame() {
   console.log(currentCapital);
   // Print out the question numbers on screen
   questionText.innerText = `${questionNumber} / ${maxQuestions}`;
+  // Run the countdown function
+  countDown();
   // Print out the question depending on country
   if (currentCapital[0] == "Benin" || currentCapital[0] == "Bolivia" || currentCapital[0] == "Burundi" || currentCapital[0] == "Eswatini" || currentCapital[0] == "Côte d'Ivoire" || currentCapital[0] == "Malaysia" || currentCapital[0] == "Netherlands" || currentCapital[0] == "South Africa" || currentCapital[0] == "Sri Lanka") {
     // Display the following question
@@ -234,6 +236,4 @@ function startGame() {
     // Display the following question
     capitalQuestion.querySelector("h1").innerHTML = `${`What is the capital city of ${currentCapital[0]}?`}`;
   }
-  // Run the countdown function
-  countDown();
 }
