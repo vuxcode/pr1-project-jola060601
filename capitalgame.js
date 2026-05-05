@@ -42,7 +42,7 @@ function getFortyCapitals() {
     // Otherwise don't add it to the array
     else {
       // Output a message
-      console.log(code + " already exists.");
+      console.log(country + " already exists.");
     }
   }
   // Output the arrays on console log to confirm that the code works
