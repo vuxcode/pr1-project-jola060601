@@ -22,8 +22,8 @@ ul {
   align-items: center;
   background: white;
   border-radius: 15px;
-  height: 50vh;
-  width: 50vw;
+  max-height: 90vh;
+  max-width: 50vw;
   padding: 10px;
   overflow: auto;
   display: flex;
@@ -31,7 +31,7 @@ ul {
   flex-direction: column;
 }
 .wrapbox img {
-  width: 25%;
+  width: 50%;
   margin: 10px;
 }
 .containerbox {
