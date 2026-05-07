@@ -127,3 +127,9 @@
 
 - 2026-05-05: 11:45 Worked for 1.5 hour.
   - Created the beginnings of the "Capital Game" page.
+
+- 2026-05-07 11:45 Worked for 1.5 hour.
+  - Changed layout to index, about, games, and contact pages to look more professional.
+    - I used semantic tags (i.e. header, article etc.) for this.
+  - Added font style for all text.
+  - Changed buttons to be more visible and readable.
