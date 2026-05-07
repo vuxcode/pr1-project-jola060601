@@ -23,6 +23,9 @@ ul {
   padding: 10px;
   overflow: auto;
 }
+.wrapbox img {
+  width: 100%;
+}
 .containerbox {
   content-visibility: visible;
   display: flex;
