@@ -22,6 +22,9 @@ ul {
   width: 50vw;
   padding: 10px;
   overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .wrapbox img {
   width: 25%;
