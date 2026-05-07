@@ -24,7 +24,8 @@ ul {
   overflow: auto;
 }
 .wrapbox img {
-  width: 100%;
+  width: 45%;
+  margin: 10px;
 }
 .containerbox {
   content-visibility: visible;
