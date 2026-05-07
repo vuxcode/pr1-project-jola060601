@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,6 +6,9 @@
 }
 body {
   background: #009DC4;
+  font-family: "Akaya Telivigala", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 h1, div {
   margin: 10px;
