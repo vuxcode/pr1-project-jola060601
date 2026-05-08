@@ -136,3 +136,7 @@
     - I used semantic tags (i.e. header, article etc.) for this.
   - Added font style for all text.
   - Changed buttons to be more visible and readable.
+
+- 2026-05-08 14:00 Worked for 1.5 hour.
+  - Linked the games to buttons in the "games" page.
+  - Created a form in the "contact" page.
