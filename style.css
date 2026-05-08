@@ -18,6 +18,16 @@ ul {
   padding: 0 0 0 20px;
   list-style-type: disc;
 }
+.gamebuttons li {
+  list-style-type: none;
+}
+.gamebuttons button {
+  padding: 10px;
+  font-size: larger;
+  background: #009DC4;
+  color: white;
+  cursor: pointer;
+}
 .wrapbox {
   display: inline-block;
   align-items: center;
