@@ -209,8 +209,12 @@ form {
   display: grid;
   width: 30vw;
 }
+#contactform input {
+  font-size: larger;
+}
 #contactform textarea {
   resize: none;
+  font-size: larger;
 }
 #sendbutton {
   display: block;
