@@ -201,6 +201,6 @@ li.currentletter {
   padding: 5px;
   margin: 5px;
 }
-#contactform label, input, textarea, button {
-  display: block;
+#contactform {
+  display: grid;
 }
