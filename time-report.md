@@ -66,6 +66,9 @@
   - Created a "capitalgame.js" file to house script from "capitalgame.html" to not make it too bloated.
   - The capital game is fully finished now.
 
+- 2026-05-08 14:00 Worked for 1.5 hour.
+  - Added a cancel game button for hangman game.
+
 > WE1
 
 - 2026-03-23 14:00 Worked for 1.5 hour.
