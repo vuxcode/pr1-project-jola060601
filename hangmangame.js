@@ -108,7 +108,7 @@ function cancelGame(clickedButton) {
   // Change the text displayed on the game modal
   hangmanModal.querySelector("h2").innerText = `${"Game Over!"}`;
   hangmanModal.querySelector("button").innerText = `${"Play again"}`
-  hangmanModal.querySelector("p").innerHTML = `${`You cancelled the game before finishing it! By the way, the answer was <b>${currentCountry}</b>.`}`;
+  hangmanModal.querySelector("p").innerHTML = `${`You cancelled the game before finishing it! By the way, the answer was: <b>${currentCountry}</b>`}`;
 }
 // Create a function to start the game
 function startGame(keyboardButton, clickedCharacter) {
