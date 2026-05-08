@@ -167,8 +167,8 @@ li.currentletter {
   background: #009DC4;
   color: white;
   cursor: pointer;
-  height: 35px;
-  width: 35px;
+  font-size: larger;
+  padding: 5px;
 }
 #keyboard button.clickedbutton {
   cursor: not-allowed;
