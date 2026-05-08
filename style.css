@@ -205,3 +205,6 @@ li.currentletter {
   display: grid;
   width: 30vw;
 }
+#contactform textarea {
+  resize: none;
+}
