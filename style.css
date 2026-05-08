@@ -201,7 +201,7 @@ li.currentletter {
   padding: 5px;
   margin: 5px;
 }
-#contactform {
+fieldset#contactform {
   display: grid;
   width: 30vw;
 }
