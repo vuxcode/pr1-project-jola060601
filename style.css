@@ -204,10 +204,14 @@ li.currentletter {
 form {
   background: #009DC4;
   color: white;
+  padding: 3px;
 }
 #contactform {
   display: grid;
   width: 30vw;
+}
+#contactform label {
+  padding: 5px;
 }
 #contactform input {
   font-size: larger;
