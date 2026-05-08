@@ -203,4 +203,5 @@ li.currentletter {
 }
 #contactform {
   display: grid;
+  width: 30vw;
 }
