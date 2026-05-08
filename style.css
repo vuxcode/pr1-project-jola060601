@@ -211,10 +211,12 @@ form {
 }
 #contactform input {
   font-size: larger;
+  padding: 5px;
 }
 #contactform textarea {
   resize: none;
   font-size: larger;
+  padding: 5px;
 }
 #sendbutton {
   display: block;
