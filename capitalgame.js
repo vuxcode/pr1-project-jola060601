@@ -113,7 +113,7 @@ function clickButtonQuestion(clickedButton) {
   button2.disabled = true;
   button3.disabled = true;
   cancelButton.disabled = true;
-  // Set a timeout that will wait one second before moving on to the next question
+  // Set a timeout that will wait two seconds before moving on to the next question
   setTimeout(function() {
     // Activate the buttons again for the next question
     button0.disabled = false;
@@ -123,7 +123,7 @@ function clickButtonQuestion(clickedButton) {
     cancelButton.disabled = false;
     // Run the function to load the next question depending on the number of questions remaining
     loadNextQuestion();
-  }, 1000)
+  }, 2000)
 }
 // Create a function to increase points when clicking the correct button
 function clickButtonPoints(clickedButton) {
