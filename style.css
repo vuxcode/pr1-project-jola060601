@@ -201,6 +201,10 @@ li.currentletter {
   padding: 5px;
   margin: 5px;
 }
+form {
+  background: #009DC4;
+  color: white;
+}
 #contactform {
   display: grid;
   width: 30vw;
