@@ -208,3 +208,12 @@ li.currentletter {
 #contactform textarea {
   resize: none;
 }
+#sendbutton {
+  display: block;
+  background: #009DC4;
+  color: white;
+  cursor: pointer;
+  width: 30vw;
+  font-size: larger;
+  padding: 5px;
+}
