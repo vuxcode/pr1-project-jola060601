@@ -101,6 +101,15 @@ function endGame(isVictory) {
     // console.log("Game Over! The word was: " + currentCountry + ".");
   }
 }
+// Create a function to cancel the game
+function cancelGame(clickedButton) {
+  // Turn the game modal on
+  hangmanModal.classList.add("show");
+  // Change the text displayed on the game modal
+  hangmanModal.querySelector("h2").innerText = `${"Game Over!"}`;
+  hangmanModal.querySelector("button").innerText = `${"Play again"}`
+  hangmanModal.querySelector("p").innerHTML = `${`You cancelled the game before finishing it! By the way, the answer was <b>${currentCountry}</b>.`}`;
+}
 // Create a function to start the game
 function startGame(keyboardButton, clickedCharacter) {
   // Check to see if "currentCountry" contains the letter in question
