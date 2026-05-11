@@ -69,6 +69,10 @@
 - 2026-05-08 14:00 Worked for 1.5 hour.
   - Added a cancel game button for hangman game.
 
+- 2026-05-11 14:00 Worked for 1.5 hour.
+  - Connected Formspree account to contact form on "contact" page.
+  - Corrected/adjusted text on all webpages.
+
 > WE1
 
 - 2026-03-23 14:00 Worked for 1.5 hour.
