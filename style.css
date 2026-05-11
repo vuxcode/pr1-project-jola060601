@@ -193,6 +193,7 @@ li.currentletter {
   margin: 10px;
   font-size: larger;
   padding: 10px;
+  border: 2px black solid;
 }
 #flagborder {
   border: 1px black solid;
