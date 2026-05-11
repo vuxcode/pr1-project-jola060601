@@ -28,6 +28,7 @@ ul {
   background: #009DC4;
   color: white;
   cursor: pointer;
+  border: 2px black solid;
 }
 .wrapbox {
   display: inline-block;
