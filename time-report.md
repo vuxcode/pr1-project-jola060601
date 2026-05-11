@@ -144,3 +144,7 @@
 - 2026-05-08 14:00 Worked for 1.5 hour.
   - Linked the games to buttons in the "games" page.
   - Created a form in the "contact" page.
+
+- 2026-05-11 14:00 Worked for 1.5 hour.
+  - Stylized the contact form to look more appealing.
+  - Stylized the buttons to look more appealing.
