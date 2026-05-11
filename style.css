@@ -130,7 +130,7 @@ ul {
 }
 .game-modal #hangman-game-modal button, #flag-game-modal button, #capital-game-modal button {
   margin-bottom: 5px;
-  padding: 10px;
+  padding: 5px;
   font-size: larger;
   background: #009DC4;
   color: white;
