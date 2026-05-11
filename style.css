@@ -135,6 +135,7 @@ ul {
   background: #009DC4;
   color: white;
   cursor: pointer;
+  border: 2px black solid;
 }
 .currentword {
   display: flex; /* Add the lines between each other (put it here instead of ".currentword li") */
@@ -170,6 +171,7 @@ li.currentletter {
   cursor: pointer;
   font-size: larger;
   padding: 5px;
+  border: 2px black solid;
 }
 #keyboard button.clickedbutton {
   cursor: not-allowed;
@@ -201,6 +203,7 @@ li.currentletter {
   cursor: pointer;
   padding: 5px;
   margin: 5px;
+  border: 2px black solid;
 }
 form {
   background: #009DC4;
