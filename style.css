@@ -204,7 +204,8 @@ li.currentletter {
 form {
   background: #009DC4;
   color: white;
-  padding: 3px;
+  padding: 5px;
+  border-radius: 10px;
 }
 #contactform {
   display: grid;
