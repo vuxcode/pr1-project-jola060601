@@ -207,6 +207,9 @@ form {
   padding: 5px;
   border-radius: 10px;
 }
+legend {
+  border: 1px white solid;
+}
 #contactform {
   display: grid;
   width: 30vw;
