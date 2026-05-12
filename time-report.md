@@ -152,3 +152,8 @@
 - 2026-05-11 14:00 Worked for 1.5 hour.
   - Stylized the contact form to look more appealing.
   - Stylized the buttons to look more appealing.
+
+- 2026-05-12: 11:30 Worked for 1.25 hour.
+  - Validated both "style.css" and all webpages.
+    - Corrected all errors and a warning on "contact.html", the only one with errors.
+  - THE MAJOR PROJECT IS NOW FINISHED!
