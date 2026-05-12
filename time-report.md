@@ -73,6 +73,10 @@
   - Connected Formspree account to contact form on "contact" page.
   - Corrected/adjusted text on all webpages.
 
+- 2026-05-12: 11:30 Worked for 1.25 hour.
+  - Removed embedded style CSS from hangman SVG images.
+  - THE MAJOR PROJECT IS NOW FINISHED!
+
 > WE1
 
 - 2026-03-23 14:00 Worked for 1.5 hour.
