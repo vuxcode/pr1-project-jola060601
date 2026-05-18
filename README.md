@@ -8,7 +8,7 @@ The final program is not the goal! The aim of the project is to show how you hav
 
 # Project Notes
 
-> You can use this section of the file to keep notes about your project as you work on it.
+> I have kept notes about my project as I worked on it via my commits (all 500+ of them), bug list as well as time report.
 
 # Project Summary
 
