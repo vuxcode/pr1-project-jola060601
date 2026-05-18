@@ -16,4 +16,4 @@ The final program is not the goal! The aim of the project is to show how you hav
 
 # User Guide
 
-> Write a clear user guide for how someone should use your program.
+> The website is simple and easy to use. Simply push the links on the navigation bar to move between home, about, games or contact pages. The games can be played by simply reading the instructions on the game modals that show up when starting the games, and then the games can be played by pushing buttons (including a cancel button to stop the game).
