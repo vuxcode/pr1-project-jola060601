@@ -23,4 +23,6 @@ I actually had go over the agreed upon budget in order to finish the project on 
 
 # User Guide
 
-> The website is simple and easy to use. Simply push the links on the navigation bar to move between home, about, games or contact pages. The games can be played by simply reading the instructions on the game modals that show up when starting the games, and then the games can be played by pushing buttons (including a cancel button to stop the game).
+> The website is simple and easy to use. Simply push the links on the navigation bar to move between home, about, games or contact pages.
+
+> The games can be played by simply reading the instructions on the game modals that show up when starting the games, and then the games can be played by pushing buttons (including a cancel button to stop the game).
