@@ -12,7 +12,14 @@ The final program is not the goal! The aim of the project is to show how you hav
 
 # Project Summary
 
-> Before the final submission date you should include a "PROJECT SUMMARY" in this section here. 
+> I want to present my project as a page to play some geography-based games.
+
+> It seemed simple enough in the beginning, but I'll admit that it was harder than intended for me to finish my project. The hangman game was especially difficult for me to build.
+I actually had go over the agreed upon budget in order to finish the project on time.
+
+> I don't really feel like the programming part need any improvement, except maybe a fourth game. The web design part is OK, but I feel like it could look better.
+
+> I did not manage to stick to the budget, since the games (especially the hangman game) were harder to build and bug test than intended.
 
 # User Guide
 
